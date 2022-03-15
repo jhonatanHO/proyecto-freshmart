@@ -1,0 +1,219 @@
+
+// BLOCK BUSCADOS
+.container-buscados{
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+    // width: 100%;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    @include respondto(minxs) {
+        width: 100%;
+    }
+    @include respondto(maxxs) {
+        width: 100%;
+    }
+    @include respondto(sm) {}
+    @include respondto(md) {}
+    @include respondto(lg) {}
+    &.focus-active{
+        display: block;
+        z-index: 1200;
+    }
+    .container-aux-buscados{
+        background: #fff;
+        @include respondto(minxs) {
+            width: 100%;
+            height: calc(100vh - 170px);
+        }
+        @include respondto(maxxs) {
+            width: 100%;
+            height: calc(100vh - 170px);
+        }
+        @include respondto(sm) {
+            width: 96vw;
+            max-width: 1170px;
+            // margin: auto;
+        }
+        @include respondto(md) {
+            width: 96vw;
+            max-width: 1170px;
+            // margin: auto;
+        }
+        @include respondto(lg) {
+            // width: 96%;
+            width: 1170px;
+            // margin: auto;
+        }
+        .content-buscados{
+            @include respondto(minxs) {
+                height: calc(100% - 53px);
+            }
+            @include respondto(maxxs) {
+                height: calc(100% - 53px);
+            }
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .lista-productos-buscados{
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+                overflow-y: auto;
+                @include respondto(minxs) {
+                    padding: 0 0 20px 0;
+                }
+                @include respondto(maxxs) {
+                    padding: 0 0 20px 0;
+                }
+                @include respondto(sm) {
+                    padding: 10px 30px;
+                }
+                @include respondto(md) {
+                    padding: 10px 30px;
+                }
+                @include respondto(lg) {
+                    padding: 10px 30px;
+                }
+                .item-producto-buscado{
+                    @include respondto(minxs) {
+                        padding: 15px 8px 0 10px;
+                        width: 100%;
+                    }
+                    @include respondto(maxxs) {
+                        padding: 15px 8px 0 10px;
+                        width: 100%;
+                    }
+                    @include respondto(sm) {
+                        width: 50%;
+                    }
+                    @include respondto(md) {
+                        width: 50%;
+                    }
+                    @include respondto(lg) {
+                        width: 50%;
+                    }
+                    .card_3{
+                        // card_display_3
+                    }
+                }
+            }
+        }
+        .content-enlace{
+            display: flex;
+            width: 100%;
+            @include respondto(minxs) {
+                height: 53px;
+            }
+            @include respondto(maxxs) {
+                height: 53px;
+            }
+            @include respondto(sm) {
+                height: 50px;
+            }
+            @include respondto(md) {
+                height: 50px;
+            }
+            @include respondto(lg) {
+                height: 50px;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                background-color: $color-btn-gris;
+                &:hover{
+                    span{
+                        &:after{
+                            margin-bottom: -2px;
+                            opacity: 1;
+                        }
+                    }
+                }
+                span{
+                    position: relative;
+                    text-transform: uppercase;
+                    color: $primary-orange;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 600;
+                    @include fontsizeheight(14px,1,14px,1,14px,1);
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $primary-orange;
+                        bottom: 0;
+                        left: 0;
+                        margin-bottom: -10px;
+                        opacity: 0;
+                        transition: all .25s;
+                    }
+                }
+            }
+        }
+        .content-buscar-otros{
+            @include respondto(minxs) {
+                display: none;
+            }
+            @include respondto(maxxs) {
+                display: none;
+            }
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .lista-buscar-otros{
+                display: flex;
+                padding: 20px 30px;
+                .item-busca-otro{
+                    flex: 1;
+                    width: 33.33%;
+                    .otro-enlace{
+                        margin-right: 6%;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            transition: all .25s;
+                            &:hover{
+                                margin-left: 3%;
+                            }
+                            i{
+                                font-size: 11px;
+                                color: #595959;
+                            }
+                            p{
+                                @include ajustacontrespuntos;
+                                color: #595959;
+                                padding: 0 0 0 5px;
+                                .texto-buscado{
+                                    font-weight: 800;
+                                }
+                                .categoria{
+                                    color: $primary-orange;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.fondo-buscados{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,.2);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+    z-index: -20;
+    &.focus-active{
+        display: block;
+        z-index: 1100;
+    }
+}

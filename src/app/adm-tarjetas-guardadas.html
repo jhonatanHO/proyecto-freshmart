@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>v2 - freshmart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <link rel="stylesheet" href="css/Main.css">
+
+</head>
+
+<body class="fondo-gray">
+    
+    <!-- ************************** BLOCK HEADER ********************************** -->
+    <header class="fs-general">
+        <!-- <div class="espacio-header scroll-active"></div> -->
+        <div class="espacio-header"></div>
+        <!-- <section class="full-width container-menu-top scroll-active"> -->
+        <section class="full-width container-menu-top">
+            <div class="blockv3-container aux-top">
+                <div class="content-top-left">
+                    <!-- <div class="btn-logo">
+                        <a href="home.html">
+                            <img src="img/logo-mini.png" alt="">
+                        </a>
+                    </div> -->
+
+
+                    <!-- ********** login active ********** -->
+                    <div class="container-btn-login">
+                        <div class="content-btn-login">
+                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <span class="hola-user">¡Hola Williams!</span>
+                        </div>
+                        <!-- <div class="container-menu-login login-active"> -->
+                        <div class="container-menu-login">
+                            <div class="content-menu-login">
+                                <div class="header-menu-login">
+                                    <i class="fa fa-user-o icon-person-login" aria-hidden="true"></i>
+                                    <span class="text-user">¡Hola Williams!</span>
+                                    <div class="close-menu-login">
+                                        <i class="fa fa-times" aria-hidden="true" onclick="closeMenuLogin()"></i>
+                                    </div>
+                                </div>
+                                <ul class="lista-menu-login">
+                                    <li class="item-menu-login">
+                                        <a href="adm-datos-personales.html">
+                                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                                            <span>Mis datos personales</span>
+                                        </a>
+                                    </li>
+                                    <li class="item-menu-login">
+                                        <a href="adm-direcciones.html">
+                                            <i class="fa fa-map" aria-hidden="true"></i>
+                                            <span>Mis direcciones</span>
+                                        </a>
+                                    </li>
+                                    <li class="item-menu-login">
+                                        <a href="adm-direcciones-facturacion.html">
+                                            <i class="fa fa-file-text" aria-hidden="true"></i>
+                                            <span>Mis direcciones de facturación</span>
+                                        </a>
+                                    </li>
+                                    <li class="item-menu-login">
+                                        <a href="adm-tarjetas-guardadas.html">
+                                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                                            <span>Mis tarjetas guardadas</span>
+                                        </a>
+                                    </li>
+                                    <li class="item-menu-login">
+                                        <a href="">
+                                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                                            <span>Mis reseñas</span>
+                                        </a>
+                                    </li>
+                                    <li class="item-menu-login">
+                                        <a href="">
+                                            <i class="fa fa-truck fa-flip-horizontal" aria-hidden="true"></i>
+                                            <span>Mis pedidos</span>
+                                        </a>
+                                    </li>
+                                    <li class="item-menu-login">
+                                        <a href="login.html">
+                                            <span>Cerrar sesión</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ********** /login active ********** -->
+
+
+                    <!-- ********** login no active ********** -->
+                    <!-- <div class="btn-resgistro">
+                        <a href="">registrate</a>
+                    </div>
+                    <div class="btn-login">
+                        <a href="">Iniciar sesión</a>
+                    </div> -->
+                    <!-- ********** /login no active ********** -->
+
+                    
+                </div>
+                <div class="content-top-right">
+                    <div class="group-datos">
+                        <div class="telefono">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>7390301</span>
+                        </div>
+                        <div class="telefono">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            <span>934-109-650</span>
+                        </div>
+                    </div>
+                    <div class="group-servicios">
+                        <div class="carrito" onclick="openCarrito()">
+                            <div class="icono-carrito">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <div class="carrito-cantidad">
+                                    <p>11.0</p>
+                                </div>
+                            </div>
+                            <div class="monto-total">
+                                <p>s/. 72.33</p>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </div>    
+                        </div>
+                        <div class="despacho" onclick="openDespacho()">
+                            <i class="fa fa-truck fa-flip-horizontal" aria-hidden="true"></i>
+                            <span>delivery</span>
+                            <i class="fa fa-caret-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="btn-menu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="full-width container-buscar scroll-active"> -->
+        <section class="full-width container-buscar">
+            <div class="container-relative">
+                <div class="blockv3-container aux-buscar">
+                    <div class="logo">
+                        <a href="home.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <!-- <div class="content-buscador focus-active"> -->
+                    <div class="content-buscador">
+                        <div class="buscador">
+                            <input class="js-input-focus" type="text" placeholder="Buscar">
+                            <div class="btn-buscar">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                            <!-- <div class="btn-limpiar-buscar limpiar-active"> -->
+                            <div class="btn-limpiar-buscar">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-carrito" onclick="openCarrito()">
+                        <div class="carrito">
+                            <div class="icono-carrito">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <div class="carrito-cantidad">
+                                    <p>11.0</p>
+                                </div>
+                            </div>
+                            <div class="monto-total">
+                                <p>s/. 72.33</p>
+                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="container-buscados focus-active"> -->
+                <div class="container-buscados">
+                    <div class="container-aux-buscados">
+                        <div class="content-buscados">
+                            <ul class="lista-productos-buscados">
+                                <li class="item-producto-buscado">
+                                    <div class="card_3">
+                                        <div class="prod-busca-imagen">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </div>
+                                        <div class="prod-busca-detalle">
+                                            <a class="titulo" href="">
+                                                <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                            </a>
+                                            <p class="descripcion">PLAY STATION PLAY STATION PLAY STATION PLAY STATION PLAY STATION</p>
+                                            <div class="precios">
+                                                <div class="precio-tachado">s/. 1,799.00</div>
+                                                <div class="precio">s/. 999.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-busca-control">
+                                            <div class="cont-cantidad">
+                                                <div class="btn-minus-mobile no-active">
+                                                <!-- <div class="btn-minus-mobile"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-left">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-add-mobile no-active"> -->
+                                                <div class="btn-add-mobile">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-right">
+                                                    <!-- <div class="btn-add no-active"> -->
+                                                    <div class="btn-add">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="btn-minus no-active">
+                                                    <!-- <div class="btn-minus"> -->
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cont-add-carro">
+                                                <div class="btn-add-carrito">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-producto-buscado">
+                                    <div class="card_3">
+                                        <div class="prod-busca-imagen">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </div>
+                                        <div class="prod-busca-detalle">
+                                            <a class="titulo" href="">
+                                                <p>PlayStation VR</p>
+                                            </a>
+                                            <p class="descripcion">PLAYSTATION</p>
+                                            <div class="precios">
+                                                <div class="precio-tachado">s/. 1,799.00</div>
+                                                <div class="precio">s/. 999.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-busca-control">
+                                            <div class="cont-cantidad">
+                                                <div class="btn-minus-mobile no-active">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-left">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <div class="btn-add-mobile">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-right">
+                                                    <div class="btn-add">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="btn-minus no-active">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cont-add-carro">
+                                                <div class="btn-add-carrito">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-producto-buscado">
+                                    <div class="card_3">
+                                        <div class="prod-busca-imagen">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </div>
+                                        <div class="prod-busca-detalle">
+                                            <a class="titulo" href="">
+                                                <p>PlayStation VR</p>
+                                            </a>
+                                            <p class="descripcion">PLAYSTATION</p>
+                                            <div class="precios">
+                                                <div class="precio-tachado">s/. 1,799.00</div>
+                                                <div class="precio">s/. 999.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-busca-control">
+                                            <div class="cont-cantidad">
+                                                <div class="btn-minus-mobile no-active">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-left">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <div class="btn-add-mobile">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-right">
+                                                    <div class="btn-add">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="btn-minus no-active">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cont-add-carro">
+                                                <div class="btn-add-carrito">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-producto-buscado">
+                                    <div class="card_3">
+                                        <div class="prod-busca-imagen">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </div>
+                                        <div class="prod-busca-detalle">
+                                            <a class="titulo" href="">
+                                                <p>PlayStation VR</p>
+                                            </a>
+                                            <p class="descripcion">PLAYSTATION</p>
+                                            <div class="precios">
+                                                <div class="precio-tachado">s/. 1,799.00</div>
+                                                <div class="precio">s/. 999.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-busca-control">
+                                            <div class="cont-cantidad">
+                                                <div class="btn-minus-mobile no-active">
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-left">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <div class="btn-add-mobile">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-right">
+                                                    <div class="btn-add">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </div>
+                                                    <div class="btn-minus no-active">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cont-add-carro">
+                                                <div class="btn-add-carrito">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-enlace">
+                            <a href="#"><span>ver todos los resultados</span></a>
+                        </div>
+                        <div class="content-buscar-otros">
+                            <ul class="lista-buscar-otros">
+                                <li class="item-busca-otro">
+                                    <div class="otro-enlace">
+                                        <a href="">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            <p>Buscar <span class="texto-buscado">Play Sation</span> en <span class="categoria">Tecnología</span> excesooo</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="item-busca-otro">
+                                    <div class="otro-enlace">
+                                        <a href="">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            <p>Buscar <span class="texto-buscado">Play Sation</span> en <span class="categoria">Tecnología</span></p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="item-busca-otro">
+                                    <div class="otro-enlace">
+                                        <a href="">
+                                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                            <p>Buscar <span class="texto-buscado">Play Sation</span> en <span class="categoria">Tecnología</span></p>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="fondo-buscados focus-active"></div> -->
+            <div class="fondo-buscados"></div>
+        </section>
+        <!-- <section class="container-menu-footer scroll-active menu-active"> -->
+        <section class="container-menu-footer">
+            <div class="close-menu">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+            <div class="container-mf-one">
+                <div class="content-mf-one">
+                    <ul class="lista-mf-one">
+                        <li class="item-mf-one">
+                            <a class="title-menu-web" href="producto-categoria-padre.html">abarrotes</a>
+                            <h3 class="title-menu-mobile"><i class="fa fa-angle-left" aria-hidden="true"></i> abarrotes</h3>
+                            <!-- <div class="container-submenu cat-active"> -->
+                            <div class="container-submenu">
+                                <div class="content-submenu">
+                                    <div class="atras-submenu">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Atras</span>
+                                    </div>
+                                    <h3 class="sub-title-menu-mobile">
+                                        <a href="producto-categoria-padre.html">abarrotes</a>
+                                    </h3>
+                                    <div class="container-image-menu">
+                                        <img src="img/logo-mini-green.png" alt="">
+                                    </div>
+                                    <div class="container-listas-submenu">
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-mf-one">
+                            <a href="producto-categoria-padre.html">frutas</a>
+                        </li>
+                        <li class="item-mf-one">
+                            <a href="producto-categoria-padre.html">verduras</a>
+                        </li>
+                        <li class="item-mf-one">
+                            <a class="title-menu-web" href="producto-categoria-padre.html">carnes</a>
+                            <h3 class="title-menu-mobile"><i class="fa fa-angle-left" aria-hidden="true"></i> carnes</h3>
+                            <div class="container-submenu">
+                                <div class="content-submenu">
+                                    <div class="atras-submenu">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Atras</span>
+                                    </div>
+                                    <h3 class="sub-title-menu-mobile">
+                                        <a href="producto-categoria-padre.html">carnes</a>
+                                    </h3>
+                                    <div class="container-image-menu">
+                                        <img src="img/logo-mini-green.png" alt="">
+                                    </div>
+                                    <div class="container-listas-submenu">
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos duraznos duraznos duraznos duraznos duraznos duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-mf-one">
+                            <a href="producto-categoria-padre.html">pollos & aves</a>
+                        </li>
+                        <li class="item-mf-one">
+                            <a href="producto-categoria-padre.html">pescados & mariscos</a>
+                        </li>
+                        <li class="item-mf-one">
+                            <a href="producto-categoria-padre.html">lácteos</a>
+                        </li>
+                        <li class="item-mf-one">
+                            <a href="producto-categoria-padre.html">aseo & limpieza</a>
+                        </li>
+                        <li class="item-mf-one">
+                            <a href="producto-categoria-padre.html">bebidas & licores</a>
+                        </li>
+                        <li class="item-mf-one">
+                            <a class="title-menu-web" href="producto-categoria-padre.html">tallarines con salsa alacena</a>
+                            <h3 class="title-menu-mobile"><i class="fa fa-angle-left" aria-hidden="true"></i> tallarines con salsa alacena</h3>
+                            <div class="container-submenu">
+                                <div class="content-submenu">
+                                    <div class="atras-submenu">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i> <span>Atras</span>
+                                    </div>
+                                    <h3 class="sub-title-menu-mobile">
+                                        <a href="producto-categoria-padre.html">tallarines con salsa alacena</a>
+                                    </h3>
+                                    <div class="container-image-menu">
+                                        <img src="img/logo-mini-green.png" alt="">
+                                    </div>
+                                    <div class="container-listas-submenu">
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos duraznos duraznos duraznos duraznos duraznos duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos duraznos duraznos duraznos duraznos duraznos duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="content-lista-submenu">
+                                            <h5 class="title-submenu">subtitle</h5>
+                                            <ul class="lista-submenu">
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">berries</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">citricos</a>
+                                                </li>
+                                                <li class="item-submenu">
+                                                    <a href="producto-categoria-hijo.html">duraznos</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-mf-two">
+                <div class="content-mf-two">
+                    <ul class="lista-mf-two">
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">ahorra</a>
+                        </li>
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">artesanal</a>
+                        </li>
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">deli</a>
+                        </li>
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">DESAYUNOS</a>
+                        </li>
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">LONCHERAS</a>
+                        </li>
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">parrillas</a>
+                        </li>
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">SIN GLUTEN</a>
+                        </li>
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">NUEVOS</a>
+                        </li>
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">OFERTAS</a>
+                        </li>
+                        <li class="item-mf-two">
+                            <a href="producto-categoria-padre.html">COMBOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- <div class="fondo-menu-footer menu-active"></div> -->
+        <div class="fondo-menu-footer"></div>
+    </header>
+    <!-- ************************** /BLOCK HEADER ********************************** -->
+
+
+    <!-- ************************** BLOCK DESPACHO ********************************** -->
+    <section class="fs-general">
+        <!-- <div class="fm-container-despacho active"> -->
+        <div class="fm-container-despacho">
+            <div class="fm-head-despacho">
+                <h4 class="fm-title-despacho">Despacho</h4>
+                <div class="fm-close-despacho">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="fm-body-despacho">
+                <div class="fm-container-distrito">
+                    <div class="fm-original-distrito">
+                        <select name="cmbdistrict" id="cmbdistrict">
+                            <option value="">Seleccionar distrito</option>
+                            <option value="127">San Isidro</option>
+                            <option value="129">Miraflores</option>
+                            <option value="131">Surco</option>
+                            <option value="141">Surquillo</option>
+                            <option value="140">San Luis</option>
+                            <option value="128">San Borja</option>
+                            <option value="130">La Molina</option>
+                            <option value="139">Magdalena</option>
+                            <option value="115">Barranco</option>
+                            <option value="119">Chorrillos</option>
+                            <option value="147">La Encantada de Villa</option>
+                        </select>
+                    </div>
+                    <div class="fm-design-distrito"></div>
+                </div>
+                <div class="fm-container-horario">
+                    <div class="fm-left-horario">
+                        <div class="fm-hora">9:00am - 1:00pm</div>
+                        <div class="fm-hora">12:30pm - 3:00pm</div>
+                        <div class="fm-hora">3:00pm - 6:00pm</div>
+                        <div class="fm-hora">6:00pm - 9:00pm</div>
+                    </div>
+                    <div class="fm-right-horario">
+                        <div class="view-content">
+
+                            <div class="fm-item-horario">
+                                <div class="fm-content-dia">
+                                    <div class="freshmart-dia">
+                                        <h3>Martes </h3>
+                                    </div>
+                                    <div class="freshmart-hour">
+                                        <!-- <div class="freshmart-info hour-active"> -->
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info hour-active">
+                                            <p>Gratis</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm-item-horario">
+                                <div class="fm-content-dia">
+                                    <div class="freshmart-dia">
+                                        <h3>Miercoles </h3>
+                                    </div>
+                                    <div class="freshmart-hour">
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info hour-active">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>Gratis</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm-item-horario">
+                                <div class="fm-content-dia">
+                                    <div class="freshmart-dia">
+                                        <h3>Jueves </h3>
+                                    </div>
+                                    <div class="freshmart-hour">
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>Gratis</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm-item-horario">
+                                <div class="fm-content-dia">
+                                    <div class="freshmart-dia">
+                                        <h3>Viernes </h3>
+                                    </div>
+                                    <div class="freshmart-hour">
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>Gratis</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm-item-horario">
+                                <div class="fm-content-dia">
+                                    <div class="freshmart-dia">
+                                        <h3>Sábado </h3>
+                                    </div>
+                                    <div class="freshmart-hour">
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>Gratis</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm-item-horario">
+                                <div class="fm-content-dia">
+                                    <div class="freshmart-dia">
+                                        <h3>Domingo </h3>
+                                    </div>
+                                    <div class="freshmart-hour">
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>Gratis</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm-item-horario">
+                                <div class="fm-content-dia">
+                                    <div class="freshmart-dia">
+                                        <h3>Lunes </h3>
+                                    </div>
+                                    <div class="freshmart-hour">
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>Gratis</p>
+                                        </div>
+                                        <div class="freshmart-info">
+                                            <p>s/. 7.50</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="fm-container-botones">
+                    <a href="javascript:void(0)" onclick="console.log('comprando')" class="fm-btn">
+                        <p>Seguir comprando</p>
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="javascript:void(0)" onclick="console.log('checkout')" class="fm-btn">
+                        <p>Checkout</p>
+                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="fm-footer-despacho">
+                <div class="fm-detalles-despacho">
+                    <a href="http://freshmart.drupal.pe/nuestros-lugares-despacho">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <p>Consulta las áreas de despacho aquí.</p>
+                    </a>
+                </div>
+                <div class="fm-condiciones-despacho">
+                    <ul>
+                        <li>Pedido minimo de 50 soles.</li>
+                        <li>Para bloquear tu horario de despacho debes estar logueado con tu usuario y cerrar tu pedido antes de las 12:00 am para entregas al dia siguiente.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ************************** /BLOCK DESPACHO ********************************** -->
+
+
+    <!-- ************************** BLOCK CARRITO DE COMPRA ********************************** -->
+    <section class="fs-general">
+        <!-- <div class="fm-container-carritocom active"> -->
+        <div class="fm-container-carritocom">
+            <div class="content-relative">
+                <div class="fm-head-carritocom">
+                    <h4 class="fm-title-carritocom">Carrito de compra</h4>
+                    <div class="fm-close-carritocom">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="fm-body-carritocom">
+                    <div class="content-carritocom">
+                        <ul class="lista-productos-carritocom">
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <!-- <div class="precio-tachado">s/. 1,799.00</div> -->
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <!-- <div class="precio-tachado">s/. 1,799.00</div> -->
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-producto-carritocom">
+                                <div class="card_2">
+                                    <div class="prod-carritocom-imagen">
+                                        <a href="">
+                                            <img src="http://freshmart.web-out.com/sites/default/files/cartavio_azucar_blanca5kg.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prod-carritocom-detalle">
+                                        <a class="titulo" href="">
+                                            <p>Play Station VR Play Station VR Play Station VR Play Station VR Play Station VR </p>
+                                        </a>
+                                        <div class="cont-cantidad">
+                                            <p>Cantidad </p>
+                                            <div class="block-cant-product">
+                                                <div class="btn-cant-minus no-active">
+                                                <!-- <div class="btn-cant-minus"> -->
+                                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="cont-cant-center">
+                                                    <input class="cant-value input-number-no-bottom" type="number" value="0" min="0">
+                                                </div>
+                                                <!-- <div class="btn-cant-add no-active"> -->
+                                                <div class="btn-cant-add">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-carritocom-control">
+                                        <div class="icono-delete">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="precios">
+                                            <div class="precio">s/. 999.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="fm-footer-carritocom">
+                    <div class="fm-detalles-carritocom">
+                        <ul>
+                            <li class="detalle-item">
+                                <div class="detalle-label">Sub Total</div>
+                                <div class="detalle-valor">
+                                    <span class="detalle-moneda">s/ </span> 
+                                    <span class="detalle-precio"> 20.00</span>
+                                </div>
+                            </li>
+                            <li class="detalle-item">
+                                <div class="detalle-label">Igv</div>
+                                <div class="detalle-valor">
+                                    <span class="detalle-moneda">s/ </span> 
+                                    <span class="detalle-precio"> 20.00</span>
+                                </div>
+                            </li>
+                            <li class="detalle-item">
+                                <div class="detalle-label">Total</div>
+                                <div class="detalle-valor">
+                                    <span class="detalle-moneda">s/ </span> 
+                                    <span class="detalle-precio"> 20.00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fm-btns-carritocom">
+                        <a href="" class="btn-ver-carritocom">ver carrito</a>
+                        <a href="" class="btn-comprar">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ************************** /BLOCK CARRITO DE COMPRA ********************************** -->
+
+
+    <!-- ************************** BLOCK FONDO OSCURO GENERAL ********************************** -->
+    <section class="fs-general">
+        <!-- <div class="fm-fondo-general active"></div> -->
+        <div class="fm-fondo-general"></div>
+    </section>
+    <!-- ************************** /BLOCK FONDO OSCURO GENERAL ********************************** -->
+
+
+
+    <!-- BODY -->
+
+    <!-- mi cuenta -->
+    <div class="fs-general">
+        <div class="full-width container-micuenta">
+            <div class="blockv3-container aux-seccion-micuenta">
+
+
+            
+                <!-- ************************** BLOCK MENU CUENTA ********************************** -->
+                <section class="container-menu-cuenta">
+                    <!-- <h2 class="title-page in">mis datos personales</h2> -->
+                    <h2 class="title-page">mis datos personales</h2>
+                    <!-- <div class="content-menu-cuenta in"> -->
+                    <div class="content-menu-cuenta">
+                        <h3 class="title-menu-cuenta">mi cuenta</h3>
+                        <div class="container-menu-perfil">
+                            <!-- <div class="content-menu-perfil in"> -->
+                            <div class="content-menu-perfil">
+                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                                <span>Mi perfil</span>
+                            </div>
+                            <!-- <ul class="lista-submenu-perfil in"> -->
+                            <ul class="lista-submenu-perfil">
+                                <li class="item-cuenta-general">
+                                    <a href="adm-datos-personales.html">Mis datos personales</a>
+                                </li>
+                                <li class="item-cuenta-general">
+                                    <a href="adm-direcciones.html">Mis direcciones</a>
+                                </li>
+                                <li class="item-cuenta-general">
+                                    <a href="adm-direcciones-facturacion.html">Mis direcciones de facturacion</a>
+                                </li>
+                                <li class="item-cuenta-general active">
+                                    <a href="adm-tarjetas-guardadas.html">Mis tarjetas guardadas</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="lista-cuenta-enlaces">
+                            <!-- <li class="item-cuenta-general active"> -->
+                            <li class="item-cuenta-general">
+                                <a href="">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <span>Mis reseñas</span>
+                                </a>
+                            </li>
+                            <li class="item-cuenta-general">
+                                <a href="adm-mis-pedidos.html">
+                                    <i class="fa fa-truck fa-flip-horizontal" aria-hidden="true"></i>
+                                    <span>Mis pedidos</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- ************************** /BLOCK MENU CUENTA ********************************** -->
+            
+
+                <!-- ************************** BLOCK TARJETAS ********************************** -->
+                <section class="container-cuenta-info">
+                    <h2 class="title-page">Mis tarjetas guardadas</h2>
+                    <div class="content-tarjetas">
+
+                        <!-- ************************** NO HAY TARJETAS ********************************** -->
+                        <!-- <p class="no-direccion">No hay tarjetas, agregue una tarjeta.</p> -->
+                        <!-- ************************** /NO HAY TARJETAS ********************************** -->
+                        
+                        <!-- ************************** SI HAY TARJETAS ********************************** -->
+                        <ul class="lista-tarjetas">
+                            <li class="item-tarjeta active">
+                            <!-- <li class="item-tarjeta"> -->
+                                <div class="card-tarjeta">
+                                    <div class="tarjeta-title">Tarjeta bancaria</div>
+                                    <div class="tarjeta-group">
+                                        <div class="tarjeta-img">
+                                            <img class="tarjeta-logo" src="img/sprite-visa.jpg" alt="">
+                                        </div>
+                                        <div class="tarjeta-info">
+                                            <div class="tarjeta-nombre">leonid ramirez</div>
+                                            <div class="tarjeta-termina">Terminación <span>7282</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="tarjeta-btns">
+                                        <div class="tarjeta-eliminar">Eliminar</div>
+                                    </div>
+                                    <div class="active-check">
+                                        <img src="img/input-ok-blanco.svg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-tarjeta">
+                                <div class="card-tarjeta">
+                                    <div class="tarjeta-title">Tarjeta bancaria</div>
+                                    <div class="tarjeta-group">
+                                        <div class="tarjeta-img">
+                                            <img class="tarjeta-logo" src="img/sprite-visa.jpg" alt="">
+                                        </div>
+                                        <div class="tarjeta-info">
+                                            <div class="tarjeta-nombre">leonid ramirez</div>
+                                            <div class="tarjeta-termina">Terminación <span>7282</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="tarjeta-btns">
+                                        <div class="tarjeta-eliminar">Eliminar</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- ************************** /SI HAY TARJETAS ********************************** -->
+
+                        <div class="content-add-btn">
+                            <a class="btn-form2" href="javascript:void(0);" onclick="openAgregarTarjetas()">Agregar nueva dirección</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ************************** /BLOCK TARJETAS ********************************** -->
+            
+
+                <!-- ************************** BLOCK DIRECCIONES ADD ********************************** -->
+                <!-- <section class="container-tarjeta-add active"> -->
+                <section class="container-tarjeta-add">
+                    <div class="content-tarjeta-add">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Agregar una tarjeta de crédito o débito</h4>
+                            <div class="modal-close">
+                                <i class="fa fa-times" aria-hidden="true" onclick="closeAgregarTarjetas()"></i>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="item-form">
+                                    <label class="label-fresh" for="nombre">Nombre del Titular</label>
+                                    <input class="input-fresh input-ok" type="text" name="nombre" placeholder="Como aparece en la tarjeta">
+                                    <!-- <input class="input-fresh" type="text" name="nombre"> -->
+                                </div>
+                                <div class="item-form">
+                                    <label class="label-fresh" for="apellido">Apellido del titular</label>
+                                    <input class="input-fresh" type="text" name="apellido" placeholder="Como aparece en la tarjeta">
+                                </div>
+                                <div class="item-form">
+                                    <label class="label-fresh" for="tarjeta">Número de tarjeta</label>
+                                    <input class="input-fresh" type="text" name="tarjeta" placeholder="●●●● ●●●● ●●●● ●●●●">
+                                </div>
+                                <div class="item-form fecha-modal">
+                                    <label class="label-fresh" for="mesexpiracion">Mes de Expiración</label>
+                                    <div class="sub-block-form">
+                                        <div class="content-select">
+                                            <select class="select-fresh" name="mesexpiracion" required="required">
+                                                <option value="? undefined:undefined ?"></option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-form fecha-modal">
+                                    <label class="label-fresh" for="anoexpiracion">Año de Expiración</label>
+                                    <div class="sub-block-form">
+                                        <div class="content-select">
+                                            <select class="select-fresh" name="anoexpiracion" required="required">
+                                                <option value="? undefined:undefined ?"></option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                                <option value="2026">2026</option>
+                                                <option value="2027">2027</option>
+                                                <option value="2028">2028</option>
+                                                <option value="2029">2029</option>
+                                                <option value="2030">2030</option>
+                                                <option value="2031">2031</option>
+                                                <option value="2032">2032</option>
+                                                <option value="2033">2033</option>
+                                                <option value="2034">2034</option>
+                                                <option value="2035">2035</option>
+                                                <option value="2036">2036</option>
+                                                <option value="2037">2037</option>
+                                                <option value="2038">2038</option>
+                                                <option value="2039">2039</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-form full-width">
+                                    <button type="submit" class="btn-form1">
+                                        Guardar esta tarjeta para futuras compras
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <!-- ************************** /BLOCK DIRECCIONES ADD ********************************** -->
+    
+            </div>
+        </div>
+    </div>
+    <!-- /mi cuenta -->
+
+    <!-- /BODY -->
+
+
+
+    <!-- ************************** BLOCK FOOTER ********************************** -->
+    <footer class="fs-general">
+        <section class="full-width container-footer">
+            <div class="blockv3-container aux-footer">
+                <ul class="container-lista-footer">
+                    <li class="container-item-footer">
+                        <h5 class="title-footer">Contacto</h5>
+                        <ul class="container-links-footer">
+                            <li class="text-footer">
+                                <p>Nicolás Ayllon 2625, El agustino - Lima, Perú</p>
+                            </li>
+                            <li class="text-footer">
+                                <p>+51 (01) 7390301</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="container-item-footer">
+                        <h5 class="title-footer">Mapa de sitio</h5>
+                        <ul class="container-links-footer">
+                            <li class="link-footer">
+                                <a href="#">Quienes somos</a>
+                            </li>
+                            <li class="link-footer">
+                                <a href="#">Preguntas frecuentes</a>
+                            </li>
+                            <li class="link-footer">
+                                <a href="#">contacto</a>
+                            </li>
+                            <li class="link-footer">
+                                <a href="#">blog</a>
+                            </li>
+                            <li class="link-footer">
+                                <a href="#">Términos y condiciones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="container-item-footer">
+                        <h5 class="title-footer">Delivery</h5>
+                        <ul class="container-links-footer">
+                            <li class="link-footer">
+                                <a href="tel: 5117390301">+51 (01) 7390301</a>
+                            </li>
+                            <li class="link-footer">
+                                <a href="mailto:admin@freshmart.pe">admin@freshmart.pe</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="container-item-footer">
+                        <h5 class="title-footer">Redes Sociales</h5>
+                        <ul class="container-links-footer">
+                            <li class="link-icon-footer">
+                                <a href="#">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="link-icon-footer">
+                                <a href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="container-item-footer">
+                        <div class="link-te-falta">
+                            <a href="#">
+                                <img src="img/tefaltaalgo2.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <!-- ************************** /BLOCK FOOTER ********************************** -->
+
+
+
+    <!-- ************************** BLOCK BOTON SUBIR ********************************** -->
+    <!-- <div class="fs-general btn-subir scroll-active"></div> -->
+    <div class="fs-general btn-subir"></div>
+    <!-- ************************** /BLOCK BOTON SUBIR ********************************** -->
+
+
+
+    <!-- ************************** LIBRERIAS JS ********************************** -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.js"></script>
+    <script type="text/javascript" src="js/v2-home.js"></script>
+    <!-- ************************** /LIBRERIAS JS ********************************** -->
+</body>
+
+</html>

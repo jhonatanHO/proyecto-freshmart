@@ -1,0 +1,77 @@
+.block-cant-product{
+    display: flex;
+    .btn-cant-add{
+        width: 25px;
+        height: 25px;
+        background: $primary-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1px;
+        color: $white;
+        font-size: 12px;
+        cursor: pointer;
+        transition: all .25s;
+        z-index: 10;
+        &:active{
+            background: $primary-orange;
+        }
+        &:hover{
+            background: $primary-grey-hover;
+        }
+        &.no-active{
+            background: #d3d3d3;
+            i{}
+        }
+        i{
+            color: $white;
+        }
+    }
+    .cont-cant-center{
+        height: 25px;
+        // width: 50px;
+        width: calc(100% - 50px);
+        .cant-value{
+            height: 100%;
+            width: 100%;
+            outline: none;
+            appearance: none;
+            border: 0;
+            right: 0;
+            text-align: center;
+            background-color: $background-general;
+            color: $primary-grey-text;
+            // max-width: calc(100% + 15px);
+            // margin-right: -15px;
+            max-width: 100%;
+            margin-right: 0px;
+        }
+    }
+    .btn-cant-minus{
+        width: 25px;
+        height: 25px;
+        background: $primary-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1px;
+        color: $white;
+        font-size: 12px;
+        cursor: pointer;
+        transition: all .25s;
+        z-index: 10;
+        &:active{
+            background: $primary-orange;
+        }
+        &:hover{
+            background: $primary-grey-hover;
+        }
+        &.no-active{
+            background: #d3d3d3;
+            i{}
+        }
+        i{
+            color: $white;
+        }
+    }
+}

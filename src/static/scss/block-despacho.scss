@@ -1,0 +1,439 @@
+@import 'base/index';
+@import 'sass/mixins';
+
+$color-green-border: #45a00a;
+$color-green-text: #0aa047;
+
+// BLOQUE DESPACHO
+.block-container-despacho{
+    position: relative;
+    width: 100%;
+    .fm-body-despacho{
+        .fm-container-arrows{
+            padding: 0 0 10px 0;
+            .fm-content-arrows{
+                display: flex;
+                justify-content: space-between;
+                .prev-despacho{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    cursor: pointer;
+                    user-select: none;
+                    &.slick-disabled{
+                        cursor: default;
+                        .icon-arrow{
+                            opacity: .6;
+                        }
+                        .prev-web,
+                        .prev-mobile{
+                            opacity: .6;
+                        }
+                    }
+                    .icon-arrow{
+                        color: $color-green-border;
+                        margin: 0 5px 0 0;
+                    }
+                    .prev-web{
+                        font-family: $font-Mont-Regular;
+                        font-weight: 600;
+                        color: $color-green-border;
+                        @include fontsizeheight(14px,1.4,14px,1.4,11px,1.4);
+                        @include respondto(minxs) {
+                            display: none;
+                        }
+                        @include respondto(maxxs) {
+                            display: none;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                    .prev-mobile{
+                        font-family: $font-Mont-Regular;
+                        font-weight: 600;
+                        color: $color-green-border;
+                        @include fontsizeheight(14px,1.4,14px,1.4,11px,1.4);
+                        @include respondto(minxs) {}
+                        @include respondto(maxxs) {}
+                        @include respondto(sm) {
+                            display: none;
+                        }
+                        @include respondto(md) {
+                            display: none;
+                        }
+                        @include respondto(lg) {
+                            display: none;
+                        }
+                    }
+                }
+                .next-despacho{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    cursor: pointer;
+                    user-select: none;
+                    &.slick-disabled{
+                        cursor: default;
+                        .icon-arrow{
+                            opacity: .6;
+                        }
+                        .next-web,
+                        .next-mobile{
+                            opacity: .6;
+                        }
+                    }
+                    .icon-arrow{
+                        color: $color-green-border;
+                        margin: 0 0 0 5px;
+                    }
+                    .next-web{
+                        font-family: $font-Mont-Regular;
+                        font-weight: 600;
+                        color: $color-green-border;
+                        @include fontsizeheight(14px,1.4,14px,1.4,11px,1.4);
+                        @include respondto(minxs) {
+                            display: none;
+                        }
+                        @include respondto(maxxs) {
+                            display: none;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                    .next-mobile{
+                        font-family: $font-Mont-Regular;
+                        font-weight: 600;
+                        color: $color-green-border;
+                        @include fontsizeheight(14px,1.4,14px,1.4,11px,1.4);
+                        @include respondto(minxs) {}
+                        @include respondto(maxxs) {}
+                        @include respondto(sm) {
+                            display: none;
+                        }
+                        @include respondto(md) {
+                            display: none;
+                        }
+                        @include respondto(lg) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .fm-container-horario{
+            display: flex;
+            width: 100%;
+            @include respondto(minxs) {
+                padding: 5px 5px 5px 5px;
+            }
+            @include respondto(maxxs) {
+                padding: 5px 5px 5px 5px;
+            }
+            @include respondto(sm) {
+                padding: 5px 5px 5px 5px;
+            }
+            @include respondto(md) {
+                padding: 5px 5px 5px 5px;
+            }
+            @include respondto(lg) {
+                padding: 5px 5px 5px 5px;
+            }
+            .fm-left-horario{
+                display: flex;
+                flex-direction: column;
+                width: 12.5%;
+                @include respondto(minxs) {
+                    width: 25%;
+                }
+                @include respondto(maxxs) {
+                    width: 16.66%;
+                }
+                @include respondto(sm) {
+                    // width: 16.66%;
+                }
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                .fm-icon-carrito{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    padding: 8px 0 23px 0;
+                    @include respondto(minxs) {
+                        padding: 8px 0 20px 0;
+                    }
+                    @include respondto(maxxs) {
+                        padding: 8px 0 20px 0;
+                    }
+                    @include respondto(sm) {}
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                    img{
+                        width: 46px;
+                    }
+                }
+                .fm-content-hora{
+                    .fm-hora{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        min-height: 76px;
+                        @include respondto(minxs) {
+                            min-height: 73px;
+                        }
+                        @include respondto(maxxs) {
+                            min-height: 73px;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                        .title{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 1.4;
+                            color: $color-green-border;
+                            text-align: center;
+                        }
+                        .hora{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: #666;
+                            line-height: 1.4;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .fm-right-horario{
+                width: 87.5%;
+                @include respondto(minxs) {
+                    width: 75%;
+                }
+                @include respondto(maxxs) {
+                    width: 83.33%;
+                }
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                .view-content{
+                    overflow-x: hidden;
+                    .slick-list{
+                        .slick-track{
+                            .fm-item-horario{
+                                &:focus{
+                                    outline: transparent;
+                                }
+                                &:nth-child(2n+1){
+                                    background: #e3e6cb;
+                                    border-radius: 10px;
+                                }
+                                .fm-content-dia{
+                                    padding: 10px 0 0 0;
+                                    .freshmart-dia{
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        text-align: center;
+                                        align-items: center;
+                                        h3{
+                                            text-transform: capitalize;
+                                            font-family: $font-Mont-Regular;
+                                            font-weight: 600;
+                                            color: $color-green-border;
+                                            @include fontsizeheight(14px,1.1,11px,1.1,11px,1.1);
+                                            padding: 0 0 5px 0;
+                                        }
+                                        .fecha-web{
+                                            font-family: $font-Mont-Regular;
+                                            font-weight: 400;
+                                            font-size: 12px;
+                                            color: #666;
+                                            line-height: 1.4;
+                                            padding: 0 0 15px 0;
+                                            @include respondto(minxs) {
+                                                display: none;
+                                            }
+                                            @include respondto(maxxs) {
+                                                display: none;
+                                            }
+                                            @include respondto(sm) {}
+                                            @include respondto(md) {}
+                                            @include respondto(lg) {}
+                                        }
+                                        .fecha-mobile{
+                                            font-family: $font-Mont-Regular;
+                                            font-weight: 400;
+                                            font-size: 12px;
+                                            color: #666;
+                                            line-height: 1.4;
+                                            padding: 0 0 15px 0;
+                                            @include respondto(minxs) {}
+                                            @include respondto(maxxs) {}
+                                            @include respondto(sm) {
+                                                display: none;
+                                            }
+                                            @include respondto(md) {
+                                                display: none;
+                                            }
+                                            @include respondto(lg) {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    .freshmart-hour{
+                                        display: flex;
+                                        flex-direction: column;
+                                        .freshmart-info{
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            text-align: center;
+                                            align-items: center;
+                                            padding: 15px 0 15px 0;
+                                            &.completado{
+                                                .content-checkbox{
+                                                    .normal-checkbox{
+                                                        height: 17px;
+                                                        cursor: default;
+                                                        .check-fresh{
+                                                            cursor: default;
+                                                        }
+                                                    }
+                                                }
+                                                .precio{
+                                                    display: none;
+                                                }
+                                                .text-complete{
+                                                    .completo{
+                                                        display: block;
+                                                    }
+                                                }
+                                            }
+                                            .content-checkbox{
+                                                @include respondto(minxs) {
+                                                    padding: 0 0 10px 0;
+                                                }
+                                                @include respondto(maxxs) {
+                                                    padding: 0 0 10px 0;
+                                                }
+                                                @include respondto(sm) {
+                                                    padding: 0 0 15px 0;
+                                                }
+                                                @include respondto(md) {
+                                                    padding: 0 0 15px 0;
+                                                }
+                                                @include respondto(lg) {
+                                                    padding: 0 0 15px 0;
+                                                }
+                                                .normal-checkbox{
+                                                    height: 17px;
+                                                    .check-fresh{}
+                                                    .check-btn{}
+                                                    .img-checkbox{
+                                                        width: 42px;
+                                                        @include respondto(minxs) {
+                                                            display: none;
+                                                        }
+                                                        @include respondto(maxxs) {
+                                                            display: none;
+                                                        }
+                                                        @include respondto(sm) {}
+                                                        @include respondto(md) {}
+                                                        @include respondto(lg) {}
+                                                    }
+                                                }
+                                            }
+                                            .precio{
+                                                font-family: $font-Mont-Regular;
+                                                font-weight: 600;
+                                                font-size: 12px;
+                                                color: $color-green-border;
+                                                line-height: 1.4;
+                                            }
+                                            .text-complete{
+                                                width: 100%;
+                                                .completo{
+                                                    font-family: $font-Mont-Regular;
+                                                    font-weight: 400;
+                                                    font-size: 12px;
+                                                    color: #666;
+                                                    line-height: 1.4;
+                                                    opacity: .6;
+                                                    @include ajustacontrespuntos;
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.normal-checkbox{
+    display: block;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    padding-left: 25px;
+    @include respondto(minxs) {
+        padding-left: 17px;
+    }
+    @include respondto(maxxs) {
+        padding-left: 17px;
+    }
+    @include respondto(sm) {}
+    @include respondto(md) {}
+    @include respondto(lg) {}
+    .check-fresh{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:disabled+.check-btn{
+            border: 1px solid #fff;
+            background: #f9ebd6;
+        }
+        &:checked+.check-btn{
+            &:after{
+                display: block;
+            }
+        }
+    }
+    .check-fresh ~ .check-btn{
+        background-color: #fff;
+    }
+    .check-btn{
+        position: absolute;
+        border: 1px solid $color-green-text;
+        border-radius: 3px;
+        top: 0;
+        left: 0;
+        height: 17px;
+        width: 17px;
+        background-color: #fff;
+        &:after{
+            content: "";
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid $color-green-border;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+        }
+    }
+}

@@ -1,0 +1,161 @@
+@import 'card_display_general/index';
+
+
+.card_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    background: $white;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 20px 8px 15px 5px;
+    min-height: 95px;
+    @include respondto(minxs) {
+        padding: 15px 5px 10px 2px;
+        min-height: 85px;
+    }
+    @include respondto(maxxs) {
+        padding: 15px 5px 10px 2px;
+        min-height: 85px;
+    }
+    @include respondto(sm) {}
+    @include respondto(md) {}
+    @include respondto(lg) {}
+    .prod-carritocom-imagen{
+        a{
+            img{
+                max-width: 100%;
+                max-height: 110px;
+                max-width: 80px;
+                @include respondto(minxs) {
+                    max-width: 70px;
+                }
+                @include respondto(maxxs) {
+                    max-width: 70px;
+                }
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+            }
+        }
+    }
+    .prod-carritocom-detalle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        padding: 0 10px 0 7px;
+        width: calc(100% - 166px);
+        .titulo{
+            padding: 0 0 5px 0;
+            p{
+                font-family: $font-Mont-Regular;
+                font-weight: 600;
+                // @include ajustatrespuntosmultiline(14px, 1.1, 2);
+                @include fontsizeheight(14px,1,14px,1,13px,1);
+                @include ajustacontrespuntos;
+                color: $primary-grey;
+                &:hover{
+                    color: $primary-green;
+                }
+            }
+        }
+        .cont-cantidad{
+            display: flex;
+            >p{
+                font-family: $font-Mont-Regular;
+                font-weight: 400;
+                @include fontsizeheight(13px,1,13px,1,12px,1);
+                @include ajustacontrespuntos;
+                padding: 0 5px 0 0;
+                margin: auto 0 auto 0;
+            }
+            .block-cant-product{
+                width: 100px;
+                @include respondto(minxs) {
+                    width: 90px;
+                }
+                @include respondto(maxxs) {}
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                .btn-cant-add{
+                    &:active{}
+                    &:hover{}
+                    &.no-active{
+                        i{}
+                    }
+                    i{}
+                }
+                .cont-cant-center{
+                    @include respondto(minxs) {
+                        width: 40px;
+                    }
+                    @include respondto(maxxs) {}
+                    @include respondto(sm) {}
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                    .cant-value{
+                    }
+                }
+                .btn-cant-minus{
+                    &:active{}
+                    &:hover{}
+                    &.no-active{
+                        i{}
+                    }
+                    i{}
+                }
+            }
+        }
+        .cantidad-precio{
+            display: flex;
+            justify-content: space-between;
+            .cantidad{
+                p{
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    @include fontsizeheight(14px,1,14px,1,12px,1);
+                    color: $primary-green;
+                }
+            }
+            .precios{
+                .precio{
+                    font-family: $font-Mont-Regular;
+                    font-weight: 700;
+                    @include fontsizeheight(14px,1,14px,1,12px,1);
+                    color: $primary-orange;
+                }
+            }
+        }
+    }
+    .prod-carritocom-control{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .icono-delete{
+            display: flex;
+            justify-content: flex-end;
+            i{
+                color: $primary-grey;
+                cursor: pointer;
+                font-size: 18px;
+                &:active{
+                    color: $primary-orange;
+                }
+                &:hover{
+                    color: $primary-grey-hover;
+                }
+            }
+        }
+        .precios{
+            .precio{
+                font-family: $font-Mont-Regular;
+                font-weight: 700;
+                @include fontsizeheight(14px,1,14px,1,12px,1);
+                color: $primary-orange;
+            }
+        }
+    }
+}

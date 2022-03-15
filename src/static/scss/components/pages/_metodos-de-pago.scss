@@ -1,0 +1,547 @@
+
+$color-text-pago: #959595;
+
+.container-metodos-pago{
+    .aux-metodos-pago{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 0 30px 0;
+        .container-pasos{
+            @include respondto(minxs) {
+                width: 100%;
+            }
+            @include respondto(maxxs) {
+                width: 100%;
+            }
+            @include respondto(sm) {
+                width: 100%;
+            }
+            @include respondto(md) {
+                padding: 0 10px 0 0;
+                width: 70%;
+            }
+            @include respondto(lg) {
+                padding: 0 10px 0 0;
+                width: 70%;
+            }
+            .block-pasos{
+                background: #fff;
+                // border: 1px solid #c6c6c6;
+                // border-radius: 6px;
+                padding: 10px;
+                width: 100%;
+                margin: 0 0 10px 0;
+                &.deshabilitado{
+                    .content-pasos{
+                        .head-pasos{
+                            h4{
+                                color: $color-text-pago;
+                            }
+                        }
+                    }
+                }
+                .content-pasos{
+                    .head-pasos{
+                        display: flex;
+                        align-items: center;
+                        padding: 0 0 0 9px;
+                        height: 35px;
+                        @include respondto(minxs) {
+                            padding: 0 0 0 0;
+                        }
+                        @include respondto(maxxs) {
+                            padding: 0 0 0 0;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                        h4{
+                            text-transform: uppercase;
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 20px;
+                            color: $primary-orange;
+                        }
+                    }
+                    .body-pasos{
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 9px 9px 9px 9px;
+                        @include respondto(minxs) {
+                            padding: 9px 0 0 0;
+                        }
+                        @include respondto(maxxs) {
+                            padding: 9px 0 0 0;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                        form{
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 100%;
+                        }
+                        .columna01{
+                            .parrafo01{
+                                font-family: $font-Mont-Regular;
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: #999999;
+                            }
+                        }
+                        .columna02{
+                            flex: 1;
+                            .parrafo02{
+                                font-family: $font-Mont-Regular;
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: #999999;
+                                margin: 0 0 8px 0;
+                            }
+                        }
+                        .columna03{
+                            display: flex;
+                            justify-content: center;
+                            text-align: center;
+                            align-items: center;
+                            min-width: 50px;
+                            border-left: 1px solid #eee;
+                            padding: 0 2px 0 2px;
+                            .estado{
+                                font-family: $font-Mont-Regular;
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: #999999;
+                            }
+                        }
+                        .columna04{
+                            width: 40%;
+                            padding: 0 0 40px 0;
+                            @include respondto(minxs) {
+                                width: 100%;
+                            }
+                            @include respondto(maxxs) {}
+                            @include respondto(sm) {}
+                            @include respondto(md) {}
+                            @include respondto(lg) {}
+                            .tipo-bloque{
+                                .sub-title{
+                                    font-family: $font-Mont-Regular;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                    color: #505050;
+                                    padding: 10px 5px 5px;
+                                }
+                                .lista-metodos{
+                                    .item-metodo{
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 8px 6px 8px 6px;
+                                        background: #fff;
+                                        border: 1px solid #e6e6e6;
+                                        margin: 0 -1px 4px 0;
+                                        border-radius: 2px;
+                                        opacity: 0.7;
+                                        cursor: pointer;
+                                        &:hover{
+                                            opacity: 1;
+                                        }
+                                        &.active-select{
+                                            opacity: 1;
+                                            p{
+                                                color: $primary-green;
+                                            }
+                                        }
+                                        img{
+                                            height: 23px;
+                                            width: 34px;
+                                        }
+                                        p{
+                                            font-family: $font-Mont-Regular;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            padding: 0 0 0 10px;
+                                            color: #aaa;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .columna05{
+                            width: 60%;
+                            padding: 0 0 15px 0;
+                            @include respondto(minxs) {
+                                width: 100%;
+                            }
+                            @include respondto(maxxs) {}
+                            @include respondto(sm) {}
+                            @include respondto(md) {}
+                            @include respondto(lg) {}
+                            .content-info-form{
+                                // display: flex;
+                                display: none;
+                                flex-wrap: wrap;
+                                // min-height: 420px;
+                                overflow: hidden;
+                                border: 1px solid #c6c6c6;
+                                border-radius: 2px;
+                                background: #fff;
+                                width: 100%;
+                                padding: 15px 15px 30px 15px;
+                                @include respondto(minxs) {
+                                    border: 0px solid transparent;
+                                    padding: 0;
+                                }
+                                @include respondto(maxxs) {}
+                                @include respondto(sm) {}
+                                @include respondto(md) {}
+                                @include respondto(lg) {}
+                                &.active-select{
+                                    display: flex;
+                                }
+                                .contra-entrega-titulo{
+                                    font-family: $font-Mont-Regular;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    padding: 0 0 20px 0;
+                                }
+                                .contra-entrega-texto{
+                                    font-family: $font-Mont-Regular;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    p{}
+                                }
+                                .lista-tarjeta{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    .item-tarjeta{
+                                        width: 100%;
+                                        &.active{
+                                            .card-tarjeta{
+                                                border: 1px solid $primary-green;
+                                            }
+                                        }
+                                        .card-tarjeta{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                            border: 1px solid $gray-eighty;
+                                            padding: 5px 10px 5px 5px;
+                                            border-radius: 3px;
+                                            margin: 0 0 10px 0;
+                                            background: linear-gradient(top, #f6f5f0, #e1e0dc);
+                                            cursor: pointer;
+                                            .card-left{
+                                                display: flex;
+                                                align-items: center;
+                                                .radio-fresh{}
+                                                label{
+                                                    display: flex;
+                                                    align-items: center;
+                                                    margin: 0 0 0 0;
+                                                    img{
+                                                        width: 50px;
+                                                    }
+                                                }
+                                            }
+                                            .card-right{
+                                                display: flex;
+                                                justify-content: center;
+                                                flex-direction: column;
+                                                align-items: flex-end;
+                                                .numero-card{
+                                                    font-family: $font-Mont-Regular;
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    letter-spacing: 1px;
+                                                    color: #666;
+                                                    padding: 5px 0 5px 0;
+                                                }
+                                                .nombre-card{
+                                                    font-family: $font-Mont-Regular;
+                                                    font-weight: 400;
+                                                    font-size: 14px;
+                                                    color: #666;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .item-form{
+                                    display: flex;
+                                    flex-direction: column;
+                                    padding: 0 4px 0 4px;
+                                    width: 100%;
+                                    &.full-width{
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: row;
+                                        flex-wrap: wrap;
+                                        padding: 0 0 0 0;
+                                    }
+                                    &.fecha-modal{
+                                        width: 50%;
+                                    }
+                                    &.item-full-width{
+                                        width: 100%;
+                                    }
+                                    &.cvv{
+                                        position: relative;
+                                        width: 50%;
+                                        .input-fresh{
+                                            &:focus + .popup-cvv{
+                                                display: block;
+                                            }
+                                        }
+                                        .popup-cvv{
+                                            display: none;
+                                            position: absolute;
+                                            right: -90px;
+                                            bottom: 18px;
+                                            padding: 10px;
+                                            background: #1472ba;
+                                            border-radius: 3px;
+                                            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                                            &:after{
+                                                content: '';
+                                                position: absolute;
+                                                left: -6px;
+                                                bottom: 18px;
+                                                width: 0; 
+                                                height: 0; 
+                                                border-right: 6px solid #1472ba;
+                                                border-top: 5px solid transparent;
+                                                border-bottom: 5px solid transparent;
+                                            }
+                                            img{
+                                                width: 65px;
+                                            }
+                                        }
+                                    }
+                                    .input-fresh {
+                                        height: 40px;
+                                    }
+                                    .label-fresh{}
+                                    .sub-block-form{
+                                        display: flex;
+                                        .content-select{
+                                            padding: 0 4px 0 4px;
+                                            width: 100%;
+                                            .select-fresh{
+                                                height: 40px;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .container-resumen{
+            @include respondto(minxs) {
+                width: 100%;
+            }
+            @include respondto(maxxs) {
+                width: 100%;
+            }
+            @include respondto(sm) {
+                width: 100%;
+            }
+            @include respondto(md) {
+                width: 30%;
+            }
+            @include respondto(lg) {
+                width: 30%;
+            }
+            .content-resumen{
+                background-color: #fff;
+                .content-relative{
+                    position: relative;
+                    .fm-head-carritocom{
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        position: relative;
+                        height: 52px;
+                        .fm-title-carritocom{
+                            padding: 0 0 0 10px;
+                            text-transform: uppercase;
+                            font-family: $font-Mont-Regular;
+                            font-weight: 600;
+                            font-size: 20px;
+                            color: $primary-green;
+                            text-align: center;
+                            @include fontsizeheight(20px,1.1,20px,1.1,20px,1.1);
+                        }
+                    }
+                    .fm-body-carritocom{
+                        width: 100%;
+                        padding: 20px 0 0 0;
+                        @include respondto(minxs) {
+                            height: auto;
+                        }
+                        @include respondto(maxxs) {
+                            height: auto;
+                        }
+                        @include respondto(sm) {
+                            height: auto;
+                        }
+                        @include respondto(md) {
+                            height: 450px;
+                        }
+                        @include respondto(lg) {
+                            height: 450px;
+                        }
+                        .content-carritocom{
+                            width: 100%;
+                            height: 100%;
+                            overflow-y: auto;
+                            overflow-x: hidden;
+                            padding: 0 5px 0 5px;
+                            @include respondto(minxs) {}
+                            @include respondto(maxxs) {}
+                            @include respondto(sm) {}
+                            @include respondto(md) {
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                            }
+                            @include respondto(lg) {
+                                overflow-y: auto;
+                                overflow-x: hidden;
+                            }
+                            &::-webkit-scrollbar-track{
+                                box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                                // border-radius: 10px;
+                                background-color: #F5F5F5;
+                            }
+                            &::-webkit-scrollbar{
+                                width: 7px;
+                                background-color: #F5F5F5;
+                            }
+                            &::-webkit-scrollbar-thumb{
+                                box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                                border-radius: 4px;
+                                background-color: #c8c8c8;
+                            }
+                            .lista-productos-carritocom{
+                                display: flex;
+                                flex-direction: column;
+                                .item-producto-carritocom{
+                                    border-top: 1px dashed #ddd;
+                                    padding: 0 0 0 0;
+                                    .card_2{
+                                        box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+                                        // card_display_2
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .fm-retornar-carrito{
+                        display: flex;
+                        justify-content: flex-end;
+                        padding: 10px 10px 10px 10px;
+                        border-top: 1px solid #ddd;
+                        border-bottom: 1px solid #ddd;
+                        a{
+                            text-decoration: none;
+                            &:hover{
+                                i,
+                                span{
+                                    color: $primary-green;
+                                }
+                            }
+                            &:active{
+                                i,
+                                span{
+                                    color: #505050;
+                                }
+                            }
+                            i{
+                                font-size: 18px;
+                                margin-right: 8px;
+                                color: #505050;
+                            }
+                            span{
+                                font-family: $font-Mont-Regular;
+                                font-weight: 400;
+                                font-size: 15px;
+                                margin-right: 5px;
+                                color: #505050;
+                            }
+                        }
+                    }
+                    .fm-footer-carritocom{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        padding: 15px 10px 20px 10px;
+                        z-index: 20;
+                        @include respondto(minxs) {
+                            padding: 10px 10px 10px 10px;
+                        }
+                        @include respondto(maxxs) {
+                            padding: 10px 10px 10px 10px;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                        .fm-detalles-carritocom{
+                            padding: 0 0 8px 0;
+                            ul{
+                                .detalle-item{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    padding: 0 0 5px 0;
+                                    .detalle-label{
+                                        text-transform: uppercase;
+                                        color: $fm-text-despacho;
+                                        font-family: $font-Mont-Bold;
+                                        font-weight: 700;
+                                        @include fontsizeheight(12px,1.1,12px,1.1,10px,1.1);
+                                    }
+                                    .detalle-valor{
+                                        display: flex;
+                                        .detalle-moneda{
+                                            font-family: $font-Mont-Regular;
+                                            font-weight: 600;
+                                            @include fontsizeheight(14px,1,14px,1,14px,1);
+                                            color: $primary-orange;
+                                            margin: 0 5px 0 0;
+                                        }
+                                        .detalle-precio{
+                                            font-family: $font-Mont-Regular;
+                                            font-weight: 600;
+                                            @include fontsizeheight(14px,1,14px,1,14px,1);
+                                            color: $primary-orange;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .item-form{
+                            .btn-form1{
+                                background: $primary-green;
+                                border-color: $primary-green;
+                                cursor: pointer;
+                                &:hover{
+                                    background: $primary-green-hover;
+                                    border-color: $primary-green;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

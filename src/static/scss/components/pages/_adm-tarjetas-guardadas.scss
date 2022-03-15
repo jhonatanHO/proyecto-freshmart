@@ -1,0 +1,331 @@
+
+
+$color-green-border: #45a00a;
+$color-green-text: #0aa047;
+
+.container-cuenta-info{
+    .title-page{}
+    .content-tarjetas{
+        .no-direccion{
+            font-family: $font-Mont-Regular;
+            font-weight: 400;
+            font-size: 14px;
+            color: #666;
+            width: 100%;
+            margin: 20px 0 30px 0;
+        }
+        .lista-tarjetas{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 0 15px 0;
+            .item-tarjeta{
+                padding: 4px 4px 4px 4px;
+                @include respondto(minxs) {
+                    width: 100%;
+                }
+                @include respondto(maxxs) {
+                    width: 50%;
+                }
+                @include respondto(sm) {
+                    width: 50%;
+                }
+                @include respondto(md) {
+                    width: 33.33%;
+                }
+                @include respondto(lg) {
+                    width: 33.33%;
+                }
+                &.active{
+                    .card-tarjeta{
+                        border: 1px solid $color-green-border;
+                        .tarjeta-title{
+                            color: $color-green-border;
+                        }
+                        .tarjeta-group{
+                            .tarjeta-img{
+                                .tarjeta-logo{}
+                            }
+                            .tarjeta-info{
+                                .tarjeta-nombre{
+                                    color: $color-green-border;
+                                }
+                                .tarjeta-termina{
+                                    color: $color-green-border;
+                                    span{}
+                                }
+                            }
+                        }
+                        .tarjeta-btns{
+                            .tarjeta-eliminar{}
+                        }
+                        .active-check{
+                            opacity: 1;
+                        }
+                    }
+                }
+                &:hover{
+                    .card-tarjeta{
+                        border: 1px solid $color-green-border;
+                        .tarjeta-title{
+                            color: $color-green-border;
+                        }
+                        .tarjeta-group{
+                            .tarjeta-img{
+                                .tarjeta-logo{}
+                            }
+                            .tarjeta-info{
+                                .tarjeta-nombre{
+                                    color: $color-green-border;
+                                }
+                                .tarjeta-termina{
+                                    color: $color-green-border;
+                                    span{}
+                                }
+                            }
+                        }
+                        .tarjeta-btns{
+                            .tarjeta-eliminar{}
+                        }
+                    }
+                }
+                .card-tarjeta{
+                    border: 1px solid $gray-eighty;
+                    padding: 12px 44px 12px 24px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    position: relative;
+                    .tarjeta-title{
+                        font-family: $font-Mont-Regular;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #666;
+                        line-height: 1.4;
+                        margin: 0 0 10px 0;
+                    }
+                    .tarjeta-group{
+                        display: flex;
+                        margin: 0 0 20px 0;
+                        .tarjeta-img{
+                            width: 40px;
+                            .tarjeta-logo{
+                                height: 32px;
+                                width: 32px;
+                            }
+                        }
+                        .tarjeta-info{
+                            display: flex;
+                            flex-direction: column;
+                            .tarjeta-nombre{
+                                font-family: $font-Mont-Regular;
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: #666;
+                                line-height: 1.6;
+                                text-transform: uppercase;
+                            }
+                            .tarjeta-termina{
+                                font-family: $font-Mont-Regular;
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: #666;
+                                line-height: 1.4;
+                                span{}
+                            }
+                        }
+                    }
+                    .tarjeta-btns{
+                        display: flex;
+                        padding: 0 0 20px 0;
+                        .tarjeta-eliminar{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            cursor: pointer;
+                            text-decoration: underline #333;
+                            color: #333;
+                            &:hover{
+                                color: $primary-orange;
+                                text-decoration: underline $primary-orange;
+                            }
+                        }
+                    }
+                    .active-check{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 32px;
+                        background: $color-green-border;
+                        opacity: 0;
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .content-add-btn{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            .btn-form2{
+                width: 45%;
+                @include respondto(minxs) {
+                    width: 100%;
+                }
+                @include respondto(maxxs) {}
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+            }
+        }
+    }
+}
+
+
+
+.container-tarjeta-add{
+    display: flex;
+    position: fixed;
+    background: $fm-blanco;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: opacity .2s linear;
+    visibility: hidden;
+    z-index: 0;
+    @include respondto(minxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(maxxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(sm) {
+        width: 700px;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    @include respondto(md) {
+        width: 700px;
+        max-height: 100vh;
+    }
+    @include respondto(lg) {
+        width: 700px;
+        max-height: 100vh;
+    }
+    &.active{
+        z-index: 9999999999;
+        opacity: 1;
+        visibility: visible;
+    }
+    .content-tarjeta-add{
+        .modal-header{
+            display: flex;
+            text-align: left;
+            align-items: center;
+            position: relative;
+            height: 52px;
+            background: $fm-gris-600;
+            .modal-close{
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                &:active{
+                    transform: translateY(-51%);
+                }
+                i{}
+            }
+            .modal-title{
+                padding: 0 35px 0 10px;
+                text-transform: uppercase;
+                color: $fm-text-despacho;
+                font-family: $font-Mont-Regular;
+                font-weight: 400;
+                @include fontsizeheight(16px,1.1,16px,1.1,16px,1.1);
+            }
+        }
+        .modal-body{
+            padding: 20px 20px 40px 16px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: calc(100% - 52px);
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                .item-form{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 4px 0 4px;
+                    @include respondto(minxs) {
+                        width: 100%;
+                    }
+                    @include respondto(maxxs) {
+                        width: 100%;
+                    }
+                    @include respondto(sm) {
+                        width: 50%;
+                    }
+                    @include respondto(md) {
+                        width: 50%;
+                    }
+                    @include respondto(lg) {
+                        width: 50%;
+                    }
+                    &.full-width{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        padding: 0 0 0 0;
+                    }
+                    &.fecha-modal{
+                        @include respondto(minxs) {
+                            width: 50%;
+                        }
+                        @include respondto(maxxs) {
+                            width: 50%;
+                        }
+                        @include respondto(sm) {
+                            width: 25%;
+                        }
+                        @include respondto(md) {
+                            width: 25%;
+                        }
+                        @include respondto(lg) {
+                            width: 25%;
+                        }
+                    }
+                    &.item-full-width{
+                        width: 100%;
+                    }
+                    .input-fresh {
+                        height: 40px;
+                    }
+                    .label-fresh{}
+                    .sub-block-form{
+                        display: flex;
+                        .content-select{
+                            padding: 0 4px 0 4px;
+                            width: 100%;
+                            .select-fresh{
+                                height: 40px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

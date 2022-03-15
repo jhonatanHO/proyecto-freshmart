@@ -1,0 +1,175 @@
+@import 'card_display_general/index';
+
+
+.card_4{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cecbb2;
+    background: $white;
+    .card_4_body{
+        display: flex;
+        @include respondto(minxs) {
+            flex-direction: column;
+        }
+        @include respondto(maxxs) {}
+        @include respondto(sm) {}
+        @include respondto(md) {}
+        @include respondto(lg) {}
+        .card_4_left{
+            width: 42.3%;
+            @include respondto(minxs) {
+                width: 100%;
+            }
+            @include respondto(maxxs) {}
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                img{
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+        .card_4_right{
+            width: 56.7%;
+            @include respondto(minxs) {
+                width: 100%;
+            }
+            @include respondto(maxxs) {}
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .precio_product{
+                color: $primary-green;
+                margin-bottom: 0;
+                font-family: $font-Mont-Bold;
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 15px;
+                letter-spacing: -1px;
+                word-spacing: 0px;
+                @include respondto(minxs) {
+                    padding: 20px 10px 5px 10px;
+                }
+                @include respondto(maxxs) {
+                    padding: 20px 10px 5px 18px;
+                }
+                @include respondto(sm) {
+                    padding: 20px 10px 5px 18px;
+                }
+                @include respondto(md) {
+                    padding: 20px 10px 5px 18px;
+                }
+                @include respondto(lg) {
+                    padding: 20px 10px 5px 18px;
+                }
+                sub{
+                    bottom: 0.15em;
+                    font-size: 50%;
+                    margin-right: 2px;
+                    vertical-align: baseline;
+                }
+                sup{
+                    font-size: 55%;
+                }
+                span{
+                    color: $gray-medium;
+                    font-family: $font-Mont-Bold;
+                    font-weight: 600;
+                    font-size: 12px;
+                    margin-left: 8px;
+                    letter-spacing: 0px;
+                }
+            }
+            .descripcion{
+                color: $gray-dark;
+                font-family: $font-Mont-Bold;
+                font-weight: 600;
+                font-size: 10px;
+                letter-spacing: 0px;
+                word-spacing: 0px;
+                @include respondto(minxs) {
+                    padding: 0 10px 15px 10px;
+                }
+                @include respondto(maxxs) {
+                    padding: 0 10px 15px 20px;
+                }
+                @include respondto(sm) {
+                    padding: 0 10px 15px 20px;
+                }
+                @include respondto(md) {
+                    padding: 0 10px 15px 20px;
+                }
+                @include respondto(lg) {
+                    padding: 0 10px 15px 20px;
+                }
+            }
+            .title{
+                h3{
+                    color: $gray-medium;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    // font-size: 12px;
+                    // line-height: 15px;
+                    // letter-spacing: normal;
+                    // word-spacing: 0px;
+                    transition: color .7s ease, border-color .7s ease, background-color .7s ease;
+                    @include ajustatrespuntosmultiline(12px, 1.1, 4);
+                    @include respondto(minxs) {
+                        padding: 0 10px 0 10px;
+                    }
+                    @include respondto(maxxs) {
+                        padding: 0 10px 0 20px;
+                    }
+                    @include respondto(sm) {
+                        padding: 0 10px 0 20px;
+                    }
+                    @include respondto(md) {
+                        padding: 0 10px 0 20px;
+                    }
+                    @include respondto(lg) {
+                        padding: 0 10px 0 20px;
+                    }
+                    &:hover{
+                        color: $primary-green;
+                    }
+                }
+            }
+            .content-sumrest_product{
+                @include respondto(minxs) {
+                    padding: 10px 10px 10px 10px;
+                }
+                @include respondto(maxxs) {
+                    padding: 10px 10px 10px 20px;
+                }
+                @include respondto(sm) {
+                    padding: 10px 10px 10px 20px;
+                }
+                @include respondto(md) {
+                    padding: 10px 10px 10px 20px;
+                }
+                @include respondto(lg) {
+                    padding: 10px 10px 10px 20px;
+                }
+                .block-cant-product{
+                    width: 100px;
+                    // block-cant-product
+                }
+            }
+        }
+    }
+    .card_4_foot{
+        .content-add-carro{
+            .block-add-carro{
+                // block-add-carro
+            }
+        }
+    }
+}

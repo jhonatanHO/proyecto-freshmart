@@ -1,0 +1,380 @@
+
+
+
+.container-cuenta-info{
+    .title-page{}
+    .content-datos-form{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 32px;
+        padding-bottom: 32px;
+        @include respondto(minxs) {}
+        @include respondto(maxxs) {}
+        @include respondto(sm) {}
+        @include respondto(md) {
+            width: 80%;
+        }
+        @include respondto(lg) {
+            width: 80%;
+        }
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            .item-form{
+                display: flex;
+                flex-direction: column;
+                padding: 0 4px 0 4px;
+                @include respondto(minxs) {
+                    width: 100%;
+                }
+                @include respondto(maxxs) {
+                    width: 100%;
+                }
+                @include respondto(sm) {
+                    width: 50%;
+                }
+                @include respondto(md) {
+                    width: 50%;
+                }
+                @include respondto(lg) {
+                    width: 50%;
+                }
+                &.full-width{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    padding: 0 0 0 0;
+                }
+                .label-fresh{}
+                .input-fresh{}
+                .sub-block-form{
+                    display: flex;
+                    .radio-fresh{}
+                    label{}
+                    .content-select{
+                        padding: 0 4px 0 4px;
+                        @include respondto(minxs) {
+                            width: 100%;
+                        }
+                        @include respondto(maxxs) {
+                            width: 33.33%;
+                        }
+                        @include respondto(sm) {
+                            width: 33.33%;
+                        }
+                        @include respondto(md) {
+                            width: 33.33%;
+                        }
+                        @include respondto(lg) {
+                            width: 33.33%;
+                        }
+                        .select-fresh{
+                            width: 100%;
+                        }
+                    }
+                }
+                .left-item-form{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 4px 0 4px;
+                    @include respondto(minxs) {
+                        width: 100%;
+                    }
+                    @include respondto(maxxs) {
+                        width: 100%;
+                    }
+                    @include respondto(sm) {
+                        width: 50%;
+                    }
+                    @include respondto(md) {
+                        width: 50%;
+                    }
+                    @include respondto(lg) {
+                        width: 50%;
+                    }
+                    .label-fresh{}
+                    .input-fresh{}
+                }
+                .right-item-form{
+                    display: flex;
+                    align-items: flex-end;
+                    padding: 0 4px 0 4px;
+                    @include respondto(minxs) {
+                        width: 100%;
+                    }
+                    @include respondto(maxxs) {
+                        width: 100%;
+                    }
+                    @include respondto(sm) {
+                        width: 50%;
+                    }
+                    @include respondto(md) {
+                        width: 50%;
+                    }
+                    @include respondto(lg) {
+                        width: 50%;
+                    }
+                    .btn-form2{}
+                }
+                .btn-form1{}
+            }
+        }
+    }
+    .content-datos-pass{
+        width: 100%;
+        @include respondto(minxs) {}
+        @include respondto(maxxs) {}
+        @include respondto(sm) {}
+        @include respondto(md) {
+            width: 80%;
+        }
+        @include respondto(lg) {
+            width: 80%;
+        }
+        .item-form{
+            display: flex;
+            padding: 0 4px 0 4px;
+            &.full-width{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 0 0 0 0;
+            }
+            .left-item-form{
+                display: flex;
+                flex-direction: column;
+                padding: 0 4px 0 4px;
+                @include respondto(minxs) {
+                    width: 100%;
+                }
+                @include respondto(maxxs) {
+                    width: 100%;
+                }
+                @include respondto(sm) {
+                    width: 50%;
+                }
+                @include respondto(md) {
+                    width: 50%;
+                }
+                @include respondto(lg) {
+                    width: 50%;
+                }
+                .label-fresh{}
+                .input-fresh{}
+            }
+            .right-item-form{
+                display: flex;
+                align-items: flex-end;
+                padding: 0 4px 0 4px;
+                @include respondto(minxs) {
+                    width: 100%;
+                }
+                @include respondto(maxxs) {
+                    width: 100%;
+                }
+                @include respondto(sm) {
+                    width: 50%;
+                }
+                @include respondto(md) {
+                    width: 50%;
+                }
+                @include respondto(lg) {
+                    width: 50%;
+                }
+                .btn-form2{}
+            }
+        }
+    }
+}
+
+
+
+.container-cambiar-email{
+    display: flex;
+    position: fixed;
+    background: $fm-blanco;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: opacity .2s linear;
+    visibility: hidden;
+    z-index: 0;
+    @include respondto(minxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(maxxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(sm) {
+        width: 700px;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    @include respondto(md) {
+        width: 700px;
+        max-height: 100vh;
+    }
+    @include respondto(lg) {
+        width: 700px;
+        max-height: 100vh;
+    }
+    &.active{
+        z-index: 9999999999;
+        opacity: 1;
+        visibility: visible;
+    }
+    .content-cambiar-email{}
+}
+
+.container-cambiar-pass{
+    display: flex;
+    position: fixed;
+    background: $fm-blanco;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: opacity .2s linear;
+    visibility: hidden;
+    z-index: 0;
+    @include respondto(minxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(maxxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(sm) {
+        width: 700px;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    @include respondto(md) {
+        width: 700px;
+        max-height: 100vh;
+    }
+    @include respondto(lg) {
+        width: 700px;
+        max-height: 100vh;
+    }
+    &.active{
+        z-index: 9999999999;
+        opacity: 1;
+        visibility: visible;
+    }
+    .content-cambiar-pass{}
+}
+
+
+
+
+.modal-header{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    position: relative;
+    height: 52px;
+    background: $fm-gris-600;
+    .modal-close{
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        &:active{
+            transform: translateY(-51%);
+        }
+        i{}
+    }
+    .modal-title{
+        padding: 0 0 0 10px;
+        text-transform: uppercase;
+        color: $fm-text-despacho;
+        font-family: $font-Mont-Regular;
+        font-weight: 400;
+        @include fontsizeheight(16px,1.1,16px,1.1,16px,1.1);
+    }
+}
+.modal-body{
+    padding: 20px 20px 40px 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100% - 52px);
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        .item-form{
+            display: flex;
+            flex-direction: column;
+            padding: 0 4px 0 4px;
+            @include respondto(minxs) {
+                width: 100%;
+            }
+            @include respondto(maxxs) {
+                width: 100%;
+            }
+            @include respondto(sm) {
+                width: 50%;
+            }
+            @include respondto(md) {
+                width: 50%;
+            }
+            @include respondto(lg) {
+                width: 50%;
+            }
+            &.full-width{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 0 0 0 0;
+            }
+            &.item-full-width{
+                width: 100%;
+            }
+            &.item-mensaje{
+                display: flex;
+                flex-direction: row;
+                padding: 12px 20px 20px 8px;
+                background: #ffd000;
+                margin-bottom: 20px;
+                i{
+                    font-size: 24px;
+                }
+                p{
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #333;
+                    line-height: 1.6;
+                    padding: 0 0 0 10px;
+                }
+            }
+            .input-fresh {
+                height: 40px;
+            }
+            .label-fresh{}
+            .sub-block-form{
+                display: flex;
+                .content-select{
+                    padding: 0 4px 0 4px;
+                    width: 100%;
+                    .select-fresh{
+                        height: 40px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

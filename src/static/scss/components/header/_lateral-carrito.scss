@@ -1,0 +1,177 @@
+
+
+.fm-container-carritocom{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 390px;
+    max-width: 96%;
+    transform: translateX(100%);
+    @include ease-default;
+    overflow: hidden;
+    background: $fm-gris-500;
+    z-index: -1;
+    &.active{
+        transform: translateX(0%);
+        z-index: 999999999999;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        @include respondto(minxs) {}
+        @include respondto(maxxs) {}
+        @include respondto(sm) {}
+        @include respondto(md) {}
+        @include respondto(lg) {}
+    }
+    .content-relative{
+        position: relative;
+        height: 100vh;
+        .fm-head-carritocom{
+            display: flex;
+            text-align: left;
+            align-items: center;
+            position: relative;
+            height: 52px;
+            background: $fm-gris-600;
+            .fm-title-carritocom{
+                padding: 0 0 0 10px;
+                text-transform: uppercase;
+                color: $fm-text-despacho;
+                font-family: $font-Mont-Regular;
+                font-weight: 400;
+                @include fontsizeheight(16px,1.1,16px,1.1,16px,1.1);
+            }
+            .fm-close-carritocom{
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                &:active{
+                    transform: translateY(-51%);
+                }
+                i{
+                    color: $fm-text-despacho;
+                }
+            }
+        }
+        .fm-body-carritocom{
+            width: 100%;
+            // height: calc(100vh - 163px);
+            height: calc(100vh - 130px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 20px 10px 60px 10px;
+            @include respondto(minxs) {
+                padding: 20px 10px 40px 10px;
+            }
+            @include respondto(maxxs) {
+                padding: 20px 10px 40px 10px;
+            }
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .content-carritocom{
+                .lista-productos-carritocom{
+                    display: flex;
+                    flex-direction: column;
+                    .item-producto-carritocom{
+                        padding: 0 0 10px 0;
+                        .card_2{
+                            // card_display_2
+                        }
+                    }
+                }
+            }
+        }
+        .fm-footer-carritocom{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background: $fm-gris-600;
+            padding: 15px 10px 20px 10px;
+            box-shadow: 0 0px 20px rgba(0, 0, 0, 0.19), 0px 0px 12px rgba(0, 0, 0, 0.23);
+            z-index: 20;
+            @include respondto(minxs) {
+                padding: 10px 10px 10px 10px;
+            }
+            @include respondto(maxxs) {
+                padding: 10px 10px 10px 10px;
+            }
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .fm-detalles-carritocom{
+                padding: 0 0 8px 0;
+                ul{
+                    .detalle-item{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 0 5px 0;
+                        .detalle-label{
+                            text-transform: uppercase;
+                            color: $fm-text-despacho;
+                            font-family: $font-Mont-Bold;
+                            font-weight: 700;
+                            @include fontsizeheight(12px,1.1,12px,1.1,10px,1.1);
+                        }
+                        .detalle-valor{
+                            display: flex;
+                            .detalle-moneda{
+                                font-family: $font-Mont-Regular;
+                                font-weight: 600;
+                                @include fontsizeheight(14px,1,14px,1,14px,1);
+                                color: $primary-orange;
+                                margin: 0 5px 0 0;
+                            }
+                            .detalle-precio{
+                                font-family: $font-Mont-Regular;
+                                font-weight: 600;
+                                @include fontsizeheight(14px,1,14px,1,14px,1);
+                                color: $primary-orange;
+                            }
+                        }
+                    }
+                }
+            }
+            .fm-btns-carritocom{
+                display: flex;
+                justify-content: space-around;
+                .btn-ver-carritocom{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    height: 26px;
+                    padding: 2px 15px 2px 15px;
+                    text-transform: uppercase;
+                    color: $fm-blanco;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    background: $fm-text-despacho;
+                    border-radius: 6px;
+                    @include fontsizeheight(12px,1.1,12px,1.1,11px,1.1);
+                }
+                .btn-comprar{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    height: 26px;
+                    padding: 2px 15px 2px 15px;
+                    text-transform: uppercase;
+                    color: $fm-blanco;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    background: $primary-orange;
+                    border-radius: 6px;
+                    @include fontsizeheight(12px,1.1,12px,1.1,11px,1.1);
+                }
+            }
+        }
+    }
+}
+
+

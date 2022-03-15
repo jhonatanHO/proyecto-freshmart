@@ -1,0 +1,385 @@
+@import 'card_display_general/index';
+
+
+.card_3{
+    display: flex;
+    justify-content: space-between;
+    @include respondto(minxs) {}
+    @include respondto(maxxs) {
+        width: 100%;
+    }
+    @include respondto(sm) {
+        max-width: 450px;
+        margin: 10px 0;
+        width: 94%;
+    }
+    @include respondto(md) {
+        max-width: 450px;
+        margin: 10px 0;
+        width: 94%;
+    }
+    @include respondto(lg) {
+        max-width: 450px;
+        margin: 10px 0;
+        width: 94%;
+    }
+    .prod-busca-imagen{
+        position: relative;
+        @include respondto(minxs) {}
+        @include respondto(maxxs) {}
+        @include respondto(sm) {
+            padding: 0 15px 0 0;
+            
+        }
+        @include respondto(md) {
+            padding: 0 15px 0 0;
+        }
+        @include respondto(lg) {
+            padding: 0 15px 0 0;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: 5%;
+            right: 0;
+            height: 80%;
+            @include respondto(minxs) {}
+            @include respondto(maxxs) {}
+            @include respondto(sm) {
+                width: 1px;
+                background: $light-divider;
+            }
+            @include respondto(md) {
+                width: 1px;
+                background: $light-divider;
+            }
+            @include respondto(lg) {
+                width: 1px;
+                background: $light-divider;
+            }
+        }
+        img{
+            max-height: 110px;
+            @include respondto(minxs) {
+                max-width: 70px;
+            }
+            @include respondto(maxxs) {
+                max-width: 70px;
+            }
+            @include respondto(sm) {
+                max-width: 90px;
+            }
+            @include respondto(md) {
+                max-width: 90px;
+            }
+            @include respondto(lg) {
+                max-width: 90px;
+            }
+        }
+    }
+    .prod-busca-detalle{
+        display: flex;
+        flex-direction: column;
+        @include respondto(minxs) {
+            flex: 1;
+            padding: 0 10px 0 7px;
+            width: calc(100% - 166px);
+        }
+        @include respondto(maxxs) {
+            flex: 1;
+            padding: 0 10px 0 7px;
+            width: calc(100% - 166px);
+        }
+        @include respondto(sm) {
+            flex: 1;
+            padding: 0 30px 0 10px;
+            width: calc(100% - 181px);
+        }
+        @include respondto(md) {
+            flex: 1;
+            padding: 0 30px 0 15px;
+            width: calc(100% - 181px);
+        }
+        @include respondto(lg) {
+            flex: 1;
+            padding: 0 30px 0 20px;
+            width: calc(100% - 181px);
+        }
+        .titulo{
+            padding: 0 0 5px 0;
+            p{
+                font-family: $font-Mont-Regular;
+                font-weight: 600;
+                @include ajustatrespuntosmultiline(14px, 1.1, 2);
+                color: $primary-grey;
+                &:hover{
+                    color: $primary-green;
+                }
+            }
+        }
+        .descripcion{
+            width: 100%;
+            font-family: $font-Mont-Regular;
+            font-weight: 400;
+            @include fontsizeheight(13px,1,13px,1,13px,1);
+            padding: 0 0 5px 0;
+            @include ajustacontrespuntos;
+        }
+        .precios{
+            .precio-tachado{
+                font-family: $font-Mont-Regular;
+                font-weight: 400;
+                @include fontsizeheight(13px,1,13px,1,13px,1);
+                text-decoration: line-through;
+                color: #737373;
+                padding: 0 0 5px 0;
+            }
+            .precio{
+                font-family: $font-Mont-Regular;
+                font-weight: 700;
+                @include fontsizeheight(14px,1,14px,1,14px,1);
+                color: $primary-orange;
+            }
+        }
+    }
+    .prod-busca-control{
+        display: flex;
+        flex-direction: column;
+        .cont-cantidad{
+            display: flex;
+            justify-content: flex-end;
+            @include respondto(minxs) {
+                justify-content: space-between;
+            }
+            @include respondto(maxxs) {
+                justify-content: space-between;
+            }
+            @include respondto(sm) {
+                justify-content: flex-end;
+            }
+            @include respondto(md) {
+                justify-content: flex-end;
+            }
+            @include respondto(lg) {
+                justify-content: flex-end;
+            }
+            .btn-minus-mobile{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 26px;
+                height: 40px;
+                border-radius: 3px;
+                background: #666;
+                color: #fff;
+                font-size: 12px;
+                cursor: pointer;
+                transition: all .25s;
+                @include respondto(minxs) {}
+                @include respondto(maxxs) {}
+                @include respondto(sm) {
+                    display: none;
+                }
+                @include respondto(md) {
+                    display: none;
+                }
+                @include respondto(lg) {
+                    display: none;
+                }
+                &:active{
+                    background: $primary-orange;
+                }
+                &.no-active{
+                    background: #d3d3d3;
+                    cursor: default;
+                }
+                i{}
+            }
+            .cont-cant-left{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 46px;
+                height: 40px;
+                background-color: #f2f2f2;
+                overflow: hidden;
+                border-radius: 3px;
+                @include respondto(minxs) {
+                    width: 38px;
+                }
+                @include respondto(maxxs) {
+                    width: 38px;
+                }
+                @include respondto(sm) {
+                    width: calc(100% - 30px);
+                }
+                @include respondto(md) {
+                    width: calc(100% - 30px);
+                }
+                @include respondto(lg) {
+                    width: calc(100% - 30px);
+                }
+                .cant-value{
+                    outline: none;
+                    appearance: none;
+                    border: 0;
+                    right: 0;
+                    text-align: center;
+                    background-color: #f2f2f2;
+                    @include respondto(minxs) {
+                        // max-width: 100%;
+                        // margin-right: 0;
+                        max-width: calc(100% + 15px);
+                        margin-right: -15px;
+                    }
+                    @include respondto(maxxs) {
+                        // max-width: 100%;
+                        // margin-right: 0;
+                        max-width: calc(100% + 15px);
+                        margin-right: -15px;
+                    }
+                    @include respondto(sm) {
+                        max-width: calc(100% + 15px);
+                        margin-right: -15px;
+                    }
+                    @include respondto(md) {
+                        max-width: calc(100% + 15px);
+                        margin-right: -15px;
+                    }
+                    @include respondto(lg) {
+                        max-width: calc(100% + 15px);
+                        margin-right: -15px;
+                    }
+                }
+            }
+            .btn-add-mobile{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 26px;
+                height: 40px;
+                border-radius: 3px;
+                background: #666;
+                color: #fff;
+                font-size: 12px;
+                cursor: pointer;
+                transition: all .25s;
+                @include respondto(minxs) {}
+                @include respondto(maxxs) {}
+                @include respondto(sm) {
+                    display: none;
+                }
+                @include respondto(md) {
+                    display: none;
+                }
+                @include respondto(lg) {
+                    display: none;
+                }
+                &:active{
+                    background: $primary-orange;
+                }
+                &.no-active{
+                    background: #d3d3d3;
+                }
+                i{}
+            }
+            .cont-cant-right{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 22px;
+                margin-left: 8px;
+                @include respondto(minxs) {
+                    display: none;
+                }
+                @include respondto(maxxs) {
+                    display: none;
+                }
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                .btn-add{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 22px;
+                    height: 46%;
+                    border-radius: 3px;
+                    background: #666;
+                    color: #fff;
+                    font-size: 12px;
+                    cursor: pointer;
+                    transition: all .25s;
+                    &:active{
+                        background: $primary-orange;
+                    }
+                    &.no-active{
+                        background: #d3d3d3;
+                    }
+                    i{}
+                }
+                .btn-minus{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 22px;
+                    height: 46%;
+                    border-radius: 3px;
+                    background: #666;
+                    color: #fff;
+                    font-size: 12px;
+                    cursor: pointer;
+                    transition: all .25s;
+                    &:active{
+                        background: $primary-orange;
+                    }
+                    &.no-active{
+                        background: #d3d3d3;
+                        cursor: default;
+                    }
+                    i{}
+                }
+            }
+        }
+        .cont-add-carro{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary-green;
+            color: $dark-icon-active;
+            margin-top: 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            @include respondto(minxs) {
+                width: 96px;
+                height: 36px;
+            }
+            @include respondto(maxxs) {
+                width: 96px;
+                height: 36px;
+            }
+            @include respondto(sm) {
+                width: 76px;
+                height: 40px;
+            }
+            @include respondto(md) {
+                width: 76px;
+                height: 40px;
+            }
+            @include respondto(lg) {
+                width: 76px;
+                height: 40px;
+            }
+            &:hover{
+                background-color: $primary-green-hover;
+            }
+            .btn-add-carrito{
+                .fa-plus{}
+                .fa-shopping-cart{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

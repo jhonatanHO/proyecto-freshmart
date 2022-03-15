@@ -1,0 +1,152 @@
+@import 'base/index';
+@import 'sass/mixins';
+
+$color-paso-check: #45a00a;
+$color-paso-gris: #eaeaea;
+$color-paso-gris-border: #dddddd;
+$color-icon-gris: #a8a8a8;
+
+.block-container-pasos{
+    .block-content-pasos{
+        display: flex;
+        padding: 10px 0 0 0;
+        .item-paso{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            &:first-child{
+                .head-paso{
+                    &:before{
+                        left: 50%;
+                        width: 50%;
+                    }
+                }
+            }
+            &:last-child{
+                .head-paso{
+                    &:before{
+                        left: 0;
+                        width: 50%;
+                    }
+                }
+            }
+            &.paso-check{
+                .head-paso{
+                    &:before{
+                        border-top: 1px solid $primary-green;
+                        border-bottom: 1px solid $primary-green;
+                        background: $primary-green-hover;
+                    }
+                    .icon-paso{
+                        background: $primary-green-hover;
+                        border: 1px solid $primary-green;
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            &.paso-actual{
+                .head-paso{
+                    &:before{
+                        border-top: 1px solid $fm-naranja-500;
+                        border-bottom: 1px solid $fm-naranja-500;
+                        background: $primary-orange;
+                    }
+                    .icon-paso{
+                        cursor: default;
+                        background: $primary-orange;
+                        border: 1px solid $fm-naranja-500;
+                        i{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .head-paso{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin: 0 0 15px 0;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    height: 5px;
+                    width: 100%;
+                    border-top: 1px solid $color-paso-gris-border;
+                    border-bottom: 1px solid $color-paso-gris-border;
+                    background: $color-paso-gris;
+                    z-index: -1;
+                }
+                .icon-paso{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    border-radius: 100%;
+                    height: 50px;
+                    width: 50px;
+                    cursor: pointer;
+                    background: $color-paso-gris;
+                    border: 1px solid $color-paso-gris-border;
+                    user-select: none;
+                    @include respondto(minxs) {
+                        height: 40px;
+                        width: 40px;
+                    }
+                    @include respondto(maxxs) {}
+                    @include respondto(sm) {}
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                    i{
+                        color: $color-icon-gris;
+                        font-size: 20px;
+                        @include respondto(minxs) {
+                            font-size: 16px;
+                        }
+                        @include respondto(maxxs) {}
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                }
+            }
+            .body-paso{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 0 5% 0 5%;
+                @include respondto(minxs) {
+                    display: none;
+                }
+                @include respondto(maxxs) {
+                    display: none;
+                }
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                h3{
+                    font-family: $font-Mont-Regular;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #666;
+                    line-height: 1.1;
+                    padding: 0 0 8px 0;
+                }
+                p{
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #666;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+// returns grid-item width based on columns number and gutter
+// retorna el ancho del grid-item basado en el número de columnas y el gutter
+@function item-width($width,$gutter){
+    @return calc(#{$width} - #{$gutter});
+}
+
+.lrow{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@each $size in $sizes {
+    @include respondto($size) {
+        $width: 100% / $nroparts;
+        @for $i from 1 through 12 {
+            .lcol-#{$size}-#{$i}{
+                width : $width * $i;
+            }
+            .lcol-#{$size}-#{$i}-null{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+
+.block-add-carro{
+    display: flex;
+    width: 100%;
+    .btn-add-carro{
+        display: none;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 100%;
+        padding: 9px 0 9px 0;
+        font-family: $font-Mont-Regular;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        background: $primary-grey;
+        color: $white;
+        user-select: none;
+        &.active{
+            display: flex;
+        }
+    }
+    .btn-add-exito{
+        display: none;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 100%;
+        padding: 9px 0 9px 0;
+        font-family: $font-Mont-Regular;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        background: $primary-green;
+        color: $white;
+        user-select: none;
+        &.active{
+            display: flex;
+        }
+    }
+    .btn-no-disponible{
+        display: none;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 100%;
+        padding: 9px 0 9px 0;
+        font-family: $font-Mont-Regular;
+        font-weight: 600;
+        font-size: 11px;
+        letter-spacing: normal;
+        word-spacing: 0px;
+        background: $primary-grey-disabled;
+        color: rgba($white, .5);
+        user-select: none;
+        &.active{
+            display: flex;
+        }
+    }
+}

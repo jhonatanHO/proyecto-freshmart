@@ -1,0 +1,305 @@
+
+
+// mi cuenta
+.container-micuenta{
+    .aux-seccion-micuenta{
+        padding: 30px 0 30px 0;
+        display: flex;
+        @include respondto(minxs) {
+            flex-direction: column;
+        }
+        @include respondto(maxxs) {
+            flex-direction: column;
+        }
+        @include respondto(sm) {}
+        @include respondto(md) {}
+        @include respondto(lg) {}
+    }
+}
+
+.container-cuenta-info{
+    background: $white;
+    @include respondto(minxs) {
+        padding: 24px 8px 24px 8px;
+        width: 100%;
+    }
+    @include respondto(maxxs) {
+        padding: 24px 8px 24px 8px;
+        width: 100%;
+    }
+    @include respondto(sm) {
+        padding: 24px 16px 24px 16px;
+        width: 75%;
+    }
+    @include respondto(md) {
+        padding: 24px 16px 24px 16px;
+        width: 75%;
+    }
+    @include respondto(lg) {
+        padding: 24px 16px 24px 16px;
+        width: 75%;
+    }
+    .title-page{
+        text-transform: uppercase;
+        font-family: $font-Mont-Regular;
+        font-weight: 400;
+        font-size: 20px;
+        color: #333;
+        padding: 0 0 20px 0;
+        margin-bottom: 32px;
+        border-bottom: solid 1px #ccc;
+        background: $white;
+        @include respondto(minxs) {
+            display: none;
+        }
+        @include respondto(maxxs) {
+            display: none;
+        }
+        @include respondto(sm) {}
+        @include respondto(md) {}
+        @include respondto(lg) {}
+    }
+}
+
+
+
+// BLOCK MENU CUENTA
+.container-menu-cuenta{
+    @include respondto(minxs) {
+        padding: 0 0 20px 0;
+    }
+    @include respondto(maxxs) {
+        padding: 0 0 20px 0;
+    }
+    @include respondto(sm) {
+        width: 25%;
+    }
+    @include respondto(md) {
+        width: 25%;
+    }
+    @include respondto(lg) {
+        width: 25%;
+    }
+    .title-page{
+        text-transform: uppercase;
+        font-family: $font-Mont-Regular;
+        font-weight: 400;
+        font-size: 20px;
+        color: $primary-orange;
+        padding: 16px 30px 16px 8px;
+        user-select: none;
+        
+        appearance: none;
+        background-color: $white;
+        background-image: url('../img/arrow-down.svg');
+        background-repeat: no-repeat;
+        background-size: initial;
+        background-position: center right 8px;
+        @include respondto(minxs) {}
+        @include respondto(maxxs) {}
+        @include respondto(sm,md,lg) {
+            display: none;
+        }
+        &.in{
+            background-image: url('../img/arrow-up.svg');
+        }
+    }
+    .content-menu-cuenta{
+        background: $white;
+        @include respondto(minxs) {
+            border-top: 1px solid #ccc;
+
+            height: 0;
+            overflow: hidden;
+            max-height: 360px;
+            transition: all 250ms ease-in;
+            transition-timing-function: ease-in;
+        }
+        @include respondto(maxxs) {
+            border-top: 1px solid #ccc;
+
+            height: 0;
+            overflow: hidden;
+            max-height: 360px;
+            transition: all 250ms ease-in;
+            transition-timing-function: ease-in;
+        }
+        @include respondto(sm) {
+            border-right: 1px solid #ccc;
+
+            height: 100%;
+        }
+        @include respondto(md) {
+            border-right: 1px solid #ccc;
+
+            height: 100%;
+        }
+        @include respondto(lg) {
+            border-right: 1px solid #ccc;
+
+            height: 100%;
+        }
+
+        &.in{
+            @include respondto(minxs) {
+                height: 100%;
+            }
+            @include respondto(maxxs) {
+                height: 100%;
+            }
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+        }
+        .title-menu-cuenta{
+            text-transform: uppercase;
+            font-family: $font-Mont-Regular;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1;
+            color: $primary-orange;
+            padding: 16px 0 16px 8px;
+            margin: 0 8px 8px 8px;
+            background: $white;
+            user-select: none;
+            border-bottom: solid 1px $primary-orange;
+        }
+        .container-menu-perfil{
+            .content-menu-perfil{
+                padding: 10px 30px 10px 8px;
+                user-select: none;
+
+                appearance: none;
+                background-color: $white;
+                // background-image: url('../img/arrow-down.svg');
+                background-repeat: no-repeat;
+                background-size: initial;
+                background-position: center right 8px;
+                @include respondto(minxs) {
+                    background-image: url('../img/arrow-down.svg');
+                }
+                @include respondto(maxxs) {
+                    background-image: url('../img/arrow-down.svg');
+                }
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                &.in{
+                    @include respondto(minxs) {
+                        background-image: url('../img/arrow-up.svg');
+                    }
+                    @include respondto(maxxs) {
+                        background-image: url('../img/arrow-up.svg');
+                    }
+                    @include respondto(sm) {}
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                }
+                i{
+                    font-size: 16px;
+                    color: #666;
+                }
+                span{
+                    padding: 0 0 0 10px;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
+            .lista-submenu-perfil{
+                display: flex;
+                flex-direction: column;
+                padding: 0 0 0 0;
+                @include respondto(minxs) {
+                    height: 0;
+                    overflow: hidden;
+                    max-height: 150px;
+                    transition: all 250ms ease-in;
+                    transition-timing-function: ease-in;
+                }
+                @include respondto(maxxs) {
+                    height: 0;
+                    overflow: hidden;
+                    max-height: 150px;
+                    transition: all 250ms ease-in;
+                    transition-timing-function: ease-in;
+                }
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                &.in{
+                    @include respondto(minxs) {
+                        height: 100%;
+                        padding: 0 0 10px 0;
+                    }
+                    @include respondto(maxxs) {
+                        height: 100%;
+                        padding: 0 0 10px 0;
+                    }
+                    @include respondto(sm) {}
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                }
+                .item-cuenta-general{
+                    padding: 8px 10px 8px 37px;
+                    &.active{
+                        a{
+                            color: $primary-orange;
+                        }
+                    }
+                    a{
+                        font-family: $font-Mont-Regular;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #666;
+                        &:hover{
+                            color: $primary-orange;
+                        }
+                    }
+                }
+            }
+        }
+        .lista-cuenta-enlaces{
+            display: flex;
+            flex-direction: column;
+            .item-cuenta-general{
+                border-top: 1px solid #ccc;
+                padding: 10px 10px 10px 8px;
+                &.active{
+                    a{
+                        i{
+                            color: $primary-orange;
+                        }
+                        span{
+                            color: $primary-orange;
+                        }
+                    }
+                }
+                a{
+                    display: flex;
+                    &:hover{
+                        i{
+                            color: $primary-orange;
+                        }
+                        span{
+                            color: $primary-orange;
+                        }
+                    }
+                    i{
+                        font-size: 16px;
+                        color: #666;
+                    }
+                    span{
+                        padding: 0 0 0 10px;
+                        font-family: $font-Mont-Regular;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #666;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,1043 @@
+.fondo-menu-footer{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,.2);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+    z-index: -20;
+    &.menu-active{
+        z-index: 1100;
+        @include respondto(minxs) {
+            display: block;
+        }
+        @include respondto(maxxs) {
+            display: block;
+        }
+        @include respondto(sm) {
+            display: none;
+        }
+        @include respondto(md) {
+            display: none;
+        }
+        @include respondto(lg) {
+            display: none;
+        }
+    }
+}
+
+.container-menu-footer{
+    position: relative;
+    width: 100%;
+    background: $white;
+    @include respondto(minxs) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        max-width: 96%;
+        transform: translateX(100%);
+        @include ease-default;
+        // transition: all 350ms ease;
+        z-index: 1400;
+        background: $primary-grey;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    @include respondto(maxxs) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        max-width: 96%;
+        transform: translateX(100%);
+        @include ease-default;
+        // transition: all 350ms ease;
+        z-index: 1400;
+        background: $primary-grey;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    @include respondto(sm) {}
+    @include respondto(md) {}
+    @include respondto(lg) {}
+    &.cat-active{
+        @include respondto(minxs) {
+            overflow-y: hidden;
+        }
+        @include respondto(maxxs) {
+            overflow-y: hidden;
+        }
+        @include respondto(sm) {}
+        @include respondto(md) {}
+        @include respondto(lg) {}
+    }
+    &.menu-active{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        @include respondto(minxs) {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100vh;
+            transform: translateX(0%);
+        }
+        @include respondto(maxxs) {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100vh;
+            transform: translateX(0%);
+        }
+        @include respondto(sm) {}
+        @include respondto(md) {}
+        @include respondto(lg) {}
+        .close-menu{
+            i{}
+        }
+    }
+    &.scroll-active{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        @include respondto(minxs) {}
+        @include respondto(maxxs) {}
+        @include respondto(sm) {
+            position: fixed;
+            top: 70px;
+            z-index: 990;
+        }
+        @include respondto(md) {
+            position: fixed;
+            top: 70px;
+            z-index: 990;
+        }
+        @include respondto(lg) {
+            position: fixed;
+            top: 70px;
+            z-index: 990;
+        }
+    }
+    .close-menu{
+        padding: 0 15px 0 15px;
+        height: 30px;
+        justify-content: flex-end;
+        align-items: center;
+        @include respondto(minxs) {
+            display: flex;
+        }
+        @include respondto(maxxs) {
+            display: flex;
+        }
+        @include respondto(sm) {
+            display: none;
+        }
+        @include respondto(md) {
+            display: none;
+        }
+        @include respondto(lg) {
+            display: none;
+        }
+        i{
+            color: $white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+    .container-mf-one{
+        @include respondto(minxs) {
+            background: $primary-green;
+        }
+        @include respondto(maxxs) {
+            background: $primary-green;
+        }
+        @include respondto(sm) {
+            border-top: 1px solid rgba($primary-grey, .5);
+            background: $white;
+        }
+        @include respondto(md) {
+            border-top: 1px solid rgba($primary-grey, .5);
+            background: $white;
+        }
+        @include respondto(lg) {
+            border-top: 1px solid rgba($primary-grey, .5);
+            background: $white;
+        }
+        .content-mf-one{
+            position: relative;
+            @include respondto(minxs) {
+                padding: 20px 0 20px 0;
+            }
+            @include respondto(maxxs) {
+                padding: 20px 0 20px 0;
+            }
+            @include respondto(sm) {
+                width: 96%;
+                max-width: 1170px;
+                margin: auto;
+                height: 61px;
+            }
+            @include respondto(md) {
+                width: 96%;
+                max-width: 1170px;
+                margin: auto;
+                height: 61px;
+            }
+            @include respondto(lg) {
+                width: 96%;
+                max-width: 1170px;
+                margin: auto;
+                height: 61px;
+            }
+            .lista-mf-one{
+                display: flex;
+                @include respondto(minxs) {
+                    flex-direction: column;
+                }
+                @include respondto(maxxs) {
+                    flex-direction: column;
+                }
+                @include respondto(sm) {
+                    justify-content: space-between;
+                    height: 100%;
+                }
+                @include respondto(md) {
+                    justify-content: space-between;
+                    height: 100%;
+                }
+                @include respondto(lg) {
+                    justify-content: space-between;
+                    height: 100%;
+                }
+                .item-mf-one{
+                    display: flex;
+                    @include respondto(minxs) {
+                        flex-direction: column;
+                    }
+                    @include respondto(maxxs) {
+                        flex-direction: column;
+                    }
+                    @include respondto(sm) {}
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                    &:hover{
+                        > a{
+                            @include respondto(minxs) {}
+                            @include respondto(maxxs) {}
+                            @include respondto(sm) {
+                                z-index: 10;
+                                background: #fff;
+                            }
+                            @include respondto(md) {
+                                z-index: 10;
+                                background: #fff;
+                            }
+                            @include respondto(lg) {
+                                z-index: 10;
+                                background: #fff;
+                            }
+                        }
+                        .container-submenu{
+                            @include respondto(minxs) {}
+                            @include respondto(maxxs) {}
+                            @include respondto(sm) {
+                                display: block;
+                                animation: panDown .5s forwards;
+                            }
+                            @include respondto(md) {
+                                display: block;
+                                animation: panDown .5s forwards;
+                            }
+                            @include respondto(lg) {
+                                display: block;
+                                animation: panDown .5s forwards;
+                            }
+                        }
+                    }
+                    > a{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                        font-family: $font-Mont-Regular;
+                        font-weight: 600;
+                        @include respondto(minxs) {
+                            justify-content: flex-end;
+                            text-align: right;
+                            font-size: 13px;
+                            line-height: 1.2;
+                            color: $white;
+                            width: 100%;
+                            min-height: 35px;
+                            padding: 2px 29px 2px 20px;
+                            @include ease-default;
+                        }
+                        @include respondto(maxxs) {
+                            justify-content: flex-end;
+                            text-align: right;
+                            font-size: 13px;
+                            line-height: 1.2;
+                            color: $white;
+                            width: 100%;
+                            min-height: 35px;
+                            padding: 2px 29px 2px 20px;
+                            @include ease-default;
+                        }
+                        @include respondto(sm) {
+                            padding: 0 5px 0 5px;
+                            font-size: 12px;
+                            color: $primary-grey;
+                        }
+                        @include respondto(md) {
+                            padding: 0 5px 0 5px;
+                            font-size: 14px;
+                            color: $primary-grey;
+                        }
+                        @include respondto(lg) {
+                            padding: 0 5px 0 5px;
+                            font-size: 15px;
+                            color: $primary-grey;
+                        }
+                        &:hover{
+                            z-index: 10;
+                            background: #fff;
+                            @include respondto(minxs) {
+                                color: rgba($white, .8);
+                                background: rgba(0,0,0,.2);
+                                padding: 2px 33px 2px 20px;
+                            }
+                            @include respondto(maxxs) {
+                                color: rgba($white, .8);
+                                background: rgba(0,0,0,.2);
+                                padding: 2px 33px 2px 20px;
+                            }
+                            @include respondto(sm) {
+                                color: rgba($primary-grey, .9);
+                            }
+                            @include respondto(md) {
+                                color: rgba($primary-grey, .9);
+                            }
+                            @include respondto(lg) {
+                                color: rgba($primary-grey, .9);
+                            }
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                @include respondto(minxs) {
+                                    top: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    width: 9px;
+                                    background: $primary-orange;
+                                    z-index: 1;
+                                }
+                                @include respondto(maxxs) {
+                                    top: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    width: 9px;
+                                    background: $primary-orange;
+                                    z-index: 1;
+                                }
+                                @include respondto(sm) {
+                                    top: 0;
+                                    left: 0;
+                                    height: 2px;
+                                    width: 100%;
+                                    background: $primary-green;
+                                }
+                                @include respondto(md) {
+                                    top: 0;
+                                    left: 0;
+                                    height: 2px;
+                                    width: 100%;
+                                    background: $primary-green;
+                                }
+                                @include respondto(lg) {
+                                    top: 0;
+                                    left: 0;
+                                    height: 2px;
+                                    width: 100%;
+                                    background: $primary-green;
+                                }
+                            }
+                        }
+                    }
+                    .title-menu-web{
+                        @include respondto(minxs) {
+                            display: none;
+                        }
+                        @include respondto(maxxs) {
+                            display: none;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                    .title-menu-mobile{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                        font-family: $font-Mont-Regular;
+                        font-weight: 600;
+                        cursor: pointer;
+                        @include respondto(minxs) {
+                            justify-content: flex-end;
+                            text-align: right;
+                            font-size: 13px;
+                            line-height: 1.2;
+                            color: $white;
+                            width: 100%;
+                            min-height: 35px;
+                            padding: 2px 29px 2px 20px;
+                            @include ease-default;
+                        }
+                        @include respondto(maxxs) {
+                            justify-content: flex-end;
+                            text-align: right;
+                            font-size: 13px;
+                            line-height: 1.2;
+                            color: $white;
+                            width: 100%;
+                            min-height: 35px;
+                            padding: 2px 29px 2px 25px;
+                            @include ease-default;
+                        }
+                        @include respondto(sm) {
+                            display: none;
+                        }
+                        @include respondto(md) {
+                            display: none;
+                        }
+                        @include respondto(lg) {
+                            display: none;
+                        }
+                        &:hover{
+                            z-index: 10;
+                            background: #fff;
+                            @include respondto(minxs) {
+                                color: rgba($white, .8);
+                                background: rgba(0,0,0,.2);
+                                padding: 2px 33px 2px 20px;
+                            }
+                            @include respondto(maxxs) {
+                                color: rgba($white, .8);
+                                background: rgba(0,0,0,.2);
+                                padding: 2px 33px 2px 20px;
+                            }
+                            @include respondto(sm) {}
+                            @include respondto(md) {}
+                            @include respondto(lg) {}
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                @include respondto(minxs) {
+                                    top: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    width: 9px;
+                                    background: $primary-orange;
+                                    z-index: 1;
+                                }
+                                @include respondto(maxxs) {
+                                    top: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    width: 9px;
+                                    background: $primary-orange;
+                                    z-index: 1;
+                                }
+                                @include respondto(sm) {}
+                                @include respondto(md) {}
+                                @include respondto(lg) {}
+                            }
+                            i{
+                                left: 10px;
+                            }
+                        }
+                        i{
+                            position: absolute;
+                            left: 12px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            font-size: 20px;
+                            transition: all 350ms ease;
+                        }
+                    }
+                    .container-submenu{
+                        @include respondto(minxs) {
+                            position: fixed;
+                            top: 0;
+                            right: 0;
+                            height: 100vh;
+                            width: 300px;
+                            min-width: 300px;
+                            max-width: 96%;
+                            transform: translateX(100%);
+                            @include ease-default;
+                            // transition: all 350ms ease;
+                            z-index: 1400;
+                            background: $primary-green;
+                            overflow-y: auto;
+                            overflow-x: hidden;
+                        }
+                        @include respondto(maxxs) {
+                            position: fixed;
+                            top: 0;
+                            right: 0;
+                            height: 100vh;
+                            width: 300px;
+                            min-width: 300px;
+                            max-width: 96%;
+                            transform: translateX(100%);
+                            @include ease-default;
+                            // transition: all 350ms ease;
+                            z-index: 1400;
+                            background: $primary-green;
+                            overflow-y: auto;
+                            overflow-x: hidden;
+                        }
+                        @include respondto(sm) {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            background: $white;
+                            padding: 30px 20px 30px 20px;
+                            z-index: 1;
+                            box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49), 0px -1px 0px rgba(128, 48, 48, 0.49);
+                        }
+                        @include respondto(md) {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            background: $white;
+                            padding: 30px 20px 30px 20px;
+                            z-index: 1;
+                            box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49), 0px -1px 0px rgba(128, 48, 48, 0.49);
+                        }
+                        @include respondto(lg) {
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            background: $white;
+                            padding: 30px 20px 30px 20px;
+                            z-index: 1;
+                            box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49), 0px -1px 0px rgba(128, 48, 48, 0.49);
+                        }
+                        &.cat-active{
+                            @include respondto(minxs) {
+                                position: fixed;
+                                top: 0;
+                                right: 0;
+                                width: 300px;
+                                height: 100vh;
+                                transform: translateX(0%);
+                                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                            }
+                            @include respondto(maxxs) {
+                                position: fixed;
+                                top: 0;
+                                right: 0;
+                                width: 300px;
+                                height: 100vh;
+                                transform: translateX(0%);
+                                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                            }
+                            @include respondto(sm) {}
+                            @include respondto(md) {}
+                            @include respondto(lg) {}
+                        }
+                        .content-submenu{
+                            display: flex;
+                            @include respondto(minxs) {
+                                flex-direction: column;
+                                width: 100%;
+                            }
+                            @include respondto(maxxs) {
+                                flex-direction: column;
+                                width: 100%;
+                            }
+                            @include respondto(sm) {}
+                            @include respondto(md) {}
+                            @include respondto(lg) {}
+                            .atras-submenu{
+                                padding: 0 15px 0 15px;
+                                height: 30px;
+                                justify-content: flex-start;
+                                align-items: center;
+                                background: $primary-grey;
+                                cursor: pointer;
+                                @include respondto(minxs) {
+                                    display: flex;
+                                }
+                                @include respondto(maxxs) {
+                                    display: flex;
+                                }
+                                @include respondto(sm) {
+                                    display: none;
+                                }
+                                @include respondto(md) {
+                                    display: none;
+                                }
+                                @include respondto(lg) {
+                                    display: none;
+                                }
+                                i{
+                                    color: $white;
+                                    font-size: 20px;
+                                    cursor: pointer;
+                                }
+                                span{
+                                    color: $white;
+                                    font-family: $font-Mont-Regular;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    cursor: pointer;
+                                    text-transform: capitalize;
+                                    padding: 0 0 0 10px;
+                                }
+                            }
+                            .sub-title-menu-mobile{
+                                display: flex;
+                                width: 100%;
+                                @include respondto(minxs) {}
+                                @include respondto(maxxs) {}
+                                @include respondto(sm) {
+                                    display: none;
+                                }
+                                @include respondto(md) {
+                                    display: none;
+                                }
+                                @include respondto(lg) {
+                                    display: none;
+                                }
+                                >a{
+                                    text-align: right;
+                                    text-transform: uppercase;
+                                    font-family: $font-Mont-Bold;
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    line-height: 1;
+                                    color: $primary-orange;
+                                    // background: transparent;
+                                    user-select: none;
+                                    padding: 20px 29px 16px 15px;
+                                    height: 100%;
+                                    width: 100%;
+                                    @include ease-default;
+
+                                    color: rgba($white, .8);
+                                    background: rgba($white,.2);
+                                    &:hover{
+                                        color: $primary-orange;
+                                        padding: 20px 33px 16px 15px;
+                                    }
+                                }
+                            }
+                            .container-image-menu{
+                                display: flex;
+                                justify-content: center;
+                                text-align: center;
+                                align-items: center;
+                                padding: 0 15px 0 15px;
+                                width: 120px;
+                                @include respondto(minxs) {
+                                    display: none;
+                                }
+                                @include respondto(maxxs) {
+                                    display: none;
+                                }
+                                @include respondto(sm) {}
+                                @include respondto(md) {}
+                                @include respondto(lg) {}
+                                img{
+                                    max-width: 100%;
+                                }
+                            }
+                            .container-listas-submenu{
+                                @include respondto(minxs) {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                @include respondto(maxxs) {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                @include respondto(sm) {
+                                    flex: 1;
+                                    display: flex;
+                                    padding: 0 0 0 20px;
+                                    overflow: hidden;
+                                    width: calc(100% - 120px);
+                                }
+                                @include respondto(md) {
+                                    flex: 1;
+                                    display: flex;
+                                    padding: 0 0 0 20px;
+                                    overflow: hidden;
+                                    width: calc(100% - 120px);
+                                }
+                                @include respondto(lg) {
+                                    flex: 1;
+                                    display: flex;
+                                    padding: 0 0 0 20px;
+                                    overflow: hidden;
+                                    width: calc(100% - 120px);
+                                }
+                                .content-lista-submenu{
+                                    @include respondto(minxs) {}
+                                    @include respondto(maxxs) {}
+                                    @include respondto(sm) {
+                                        flex: 1;
+                                        display: flex;
+                                        flex-direction: column;
+                                        padding: 0 20px 0 0;
+                                        max-width: 33.33%;
+                                    }
+                                    @include respondto(md) {
+                                        flex: 1;
+                                        display: flex;
+                                        flex-direction: column;
+                                        padding: 0 20px 0 0;
+                                        max-width: 33.33%;
+                                    }
+                                    @include respondto(lg) {
+                                        flex: 1;
+                                        display: flex;
+                                        flex-direction: column;
+                                        padding: 0 20px 0 0;
+                                        max-width: 33.33%;
+                                    }
+                                    .title-submenu{
+                                        @include respondto(minxs) {
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            align-items: center;
+                                            text-transform: uppercase;
+                                            text-align: right;
+                                            font-family: $font-Mont-Bold;
+                                            font-weight: 600;
+                                            font-size: 15px;
+                                            min-height: 40px;
+                                            color: $primary-grey;
+                                            padding: 2px 29px 2px 20px;
+                                        }
+                                        @include respondto(maxxs) {
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            align-items: center;
+                                            text-transform: uppercase;
+                                            text-align: right;
+                                            font-family: $font-Mont-Bold;
+                                            font-weight: 600;
+                                            font-size: 15px;
+                                            min-height: 40px;
+                                            color: $primary-grey;
+                                            padding: 2px 29px 2px 20px;
+                                        }
+                                        @include respondto(sm) {
+                                            text-transform: uppercase;
+                                            font-family: $font-Mont-Light;
+                                            font-weight: 600;
+                                            font-size: 13px;
+                                            color: $light-primary-text;
+                                            padding: 0 0 10px 0;
+                                        }
+                                        @include respondto(md) {
+                                            text-transform: uppercase;
+                                            font-family: $font-Mont-Light;
+                                            font-weight: 600;
+                                            font-size: 13px;
+                                            color: $light-primary-text;
+                                            padding: 0 0 10px 0;
+                                        }
+                                        @include respondto(lg) {
+                                            text-transform: uppercase;
+                                            font-family: $font-Mont-Light;
+                                            font-weight: 600;
+                                            font-size: 13px;
+                                            color: $light-primary-text;
+                                            padding: 0 0 10px 0;
+                                        }
+                                    }
+                                    .lista-submenu{
+                                        display: flex;
+                                        flex-direction: column;
+                                        .item-submenu{
+                                            position: relative;
+                                            padding: 0 0 5px 0;
+                                            @include ajustacontrespuntos;
+                                            > a{
+                                                @include respondto(minxs) {
+                                                    position: relative;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    text-transform: uppercase;
+                                                    font-family: $font-Mont-Regular;
+                                                    font-weight: 600;
+
+                                                    justify-content: flex-end;
+                                                    text-align: right;
+                                                    font-size: 13px;
+                                                    line-height: 1.2;
+                                                    color: $white;
+                                                    width: 100%;
+                                                    min-height: 35px;
+                                                    padding: 2px 29px 2px 20px;
+                                                    @include ease-default;
+                                                    @include ajustatexto;
+                                                }
+                                                @include respondto(maxxs) {
+                                                    position: relative;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    text-transform: uppercase;
+                                                    font-family: $font-Mont-Regular;
+                                                    font-weight: 600;
+
+                                                    justify-content: flex-end;
+                                                    text-align: right;
+                                                    font-size: 13px;
+                                                    line-height: 1.2;
+                                                    color: $white;
+                                                    width: 100%;
+                                                    min-height: 35px;
+                                                    padding: 2px 29px 2px 20px;
+                                                    @include ease-default;
+                                                    @include ajustatexto;
+                                                }
+                                                @include respondto(sm) {
+                                                    text-transform: capitalize;
+                                                    font-family: $font-Mont-Light;
+                                                    font-weight: 600;
+                                                    font-size: 13px;
+                                                    color: $light-secundary-text ;
+                                                    @include ajustacontrespuntos;
+                                                }
+                                                @include respondto(md) {
+                                                    text-transform: capitalize;
+                                                    font-family: $font-Mont-Light;
+                                                    font-weight: 600;
+                                                    font-size: 13px;
+                                                    color: $light-secundary-text ;
+                                                    @include ajustacontrespuntos;
+                                                }
+                                                @include respondto(lg) {
+                                                    text-transform: capitalize;
+                                                    font-family: $font-Mont-Light;
+                                                    font-weight: 600;
+                                                    font-size: 13px;
+                                                    color: $light-secundary-text ;
+                                                    @include ajustacontrespuntos;
+                                                }
+                                                &:hover{
+                                                    z-index: 10;
+                                                    background: #fff;
+                                                    @include respondto(minxs) {
+                                                        color: rgba($white, .8);
+                                                        background: rgba(0,0,0,.2);
+                                                        padding: 2px 33px 2px 20px;
+                                                    }
+                                                    @include respondto(maxxs) {
+                                                        color: rgba($white, .8);
+                                                        background: rgba(0,0,0,.2);
+                                                        padding: 2px 33px 2px 20px;
+                                                    }
+                                                    @include respondto(sm) {
+                                                        color: $primary-orange;
+                                                    }
+                                                    @include respondto(md) {
+                                                        color: $primary-orange;
+                                                    }
+                                                    @include respondto(lg) {
+                                                        color: $primary-orange;
+                                                    }
+                                                    &:after{
+                                                        content: '';
+                                                        position: absolute;
+                                                        @include respondto(minxs) {
+                                                            top: 0;
+                                                            right: 0;
+                                                            height: 100%;
+                                                            width: 9px;
+                                                            background: $primary-orange;
+                                                            z-index: 1;
+                                                        }
+                                                        @include respondto(maxxs) {
+                                                            top: 0;
+                                                            right: 0;
+                                                            height: 100%;
+                                                            width: 9px;
+                                                            background: $primary-orange;
+                                                            z-index: 1;
+                                                        }
+                                                        @include respondto(sm) {}
+                                                        @include respondto(md) {}
+                                                        @include respondto(lg) {}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container-mf-two{
+        background: $primary-grey;
+        .content-mf-two{
+            @include respondto(minxs) {
+                padding: 20px 0 20px 0;
+            }
+            @include respondto(maxxs) {
+                padding: 20px 0 20px 0;
+            }
+            @include respondto(sm) {
+                width: 96%;
+                max-width: 1170px;
+                margin: auto;
+                height: 34px;
+            }
+            @include respondto(md) {
+                width: 96%;
+                max-width: 1170px;
+                margin: auto;
+                height: 34px;
+            }
+            @include respondto(lg) {
+                width: 96%;
+                max-width: 1170px;
+                margin: auto;
+                height: 34px;
+            }
+            .lista-mf-two{
+                display: flex;
+                @include respondto(minxs) {
+                    flex-direction: column;
+                }
+                @include respondto(maxxs) {
+                    flex-direction: column;
+                }
+                @include respondto(sm) {
+                    justify-content: space-between;
+                    height: 100%;
+                }
+                @include respondto(md) {
+                    justify-content: space-between;
+                    height: 100%;
+                }
+                @include respondto(lg) {
+                    justify-content: space-between;
+                    height: 100%;
+                }
+                .item-mf-two{
+                    display: flex;
+                    > a{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                        font-family: $font-Mont-Regular;
+                        font-weight: 600;
+                        color: $white;
+                        @include respondto(minxs) {
+                            justify-content: flex-end;
+                            text-align: right;
+                            font-size: 13px;
+                            height: 35px;
+                            width: 100%;
+                            padding: 0 29px 0 20px;
+                            @include ease-default;
+                        }
+                        @include respondto(maxxs) {
+                            justify-content: flex-end;
+                            text-align: right;
+                            font-size: 13px;
+                            height: 35px;
+                            width: 100%;
+                            padding: 0 29px 0 20px;
+                            @include ease-default;
+                        }
+                        @include respondto(sm) {
+                            justify-content: center;
+                            text-align: center;
+                            padding: 0 5px 0 5px;
+                            font-size: 12px;
+                        }
+                        @include respondto(md) {
+                            justify-content: center;
+                            text-align: center;
+                            padding: 0 5px 0 5px;
+                            font-size: 14px;
+                        }
+                        @include respondto(lg) {
+                            justify-content: center;
+                            text-align: center;
+                            padding: 0 5px 0 5px;
+                            font-size: 14px;
+                        }
+                        &:hover{
+                            @include respondto(minxs) {
+                                color: rgba($white, .8);
+                                background: rgba(0,0,0,.2);
+                                padding: 0 33px 0 20px;
+                            }
+                            @include respondto(maxxs) {
+                                color: rgba($white, .8);
+                                background: rgba(0,0,0,.2);
+                                padding: 0 33px 0 20px;
+                            }
+                            @include respondto(sm) {
+                                color: $primary-orange;
+                            }
+                            @include respondto(md) {
+                                color: $primary-orange;
+                            }
+                            @include respondto(lg) {
+                                color: $primary-orange;
+                            }
+                            &:after{
+                                content: '';
+                                position: absolute;
+                                @include respondto(minxs) {
+                                    top: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    width: 9px;
+                                    background: $primary-orange;
+                                    z-index: 1;
+                                }
+                                @include respondto(maxxs) {
+                                    top: 0;
+                                    right: 0;
+                                    height: 100%;
+                                    width: 9px;
+                                    background: $primary-orange;
+                                    z-index: 1;
+                                }
+                                @include respondto(sm) {}
+                                @include respondto(md) {}
+                                @include respondto(lg) {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

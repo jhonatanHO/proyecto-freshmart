@@ -1,0 +1,56 @@
+@import 'home/index';
+
+
+// BLOCK SECCION OFERTAS
+.container-ofertas{
+    .aux-seccion-ofertas{
+        padding: 50px 0 0 0;
+        .section-title{
+            color: $primary-green;
+            font-family: $font-Mont-Bold;
+            font-weight: 800;
+            font-size: 30px;
+            letter-spacing: normal;
+            word-spacing: 0px;
+            text-align: left;
+            text-transform: uppercase;
+            padding: 0 0 20px 0;
+            line-height: 1;
+        }
+        .content-ofertas{
+            display: flex;
+            flex-wrap: wrap;
+            .container-card_1{
+                padding: 0 1% 16px 1%;
+                .card_1{}
+            }
+        }
+    }
+}
+
+// BLOCK SECCION NUEVOS PRODUCTOS
+.container-nuevos-productos{
+    .aux-seccion-nuevos-productos{
+        padding: 50px 0 50px 0;
+        .section-title{
+            color: $primary-green;
+            font-family: $font-Mont-Bold;
+            font-weight: 800;
+            font-size: 30px;
+            letter-spacing: normal;
+            word-spacing: 0px;
+            text-align: left;
+            text-transform: uppercase;
+            padding: 0 0 20px 0;
+            line-height: 1;
+        }
+        .content-nuevos-productos{
+            display: flex;
+            flex-wrap: wrap;
+            .container-card_1{
+                padding: 0 1% 16px 1%;
+                .card_1{}
+            }
+        }
+    }
+}

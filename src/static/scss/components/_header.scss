@@ -1,0 +1,971 @@
+@import 'header/index';
+
+// BLOCK HEADER
+body {
+    &.oveflow-hidden-mobile{
+        @include respondto(minxs) {
+            overflow: hidden;
+        }
+        @include respondto(maxxs) {
+            overflow: hidden;
+        }
+        @include respondto(sm) {}
+        @include respondto(md) {}
+        @include respondto(lg) {}
+    }
+}
+
+.espacio-header{
+    width: 100%;
+    &.scroll-active{
+        @include respondto(minxs) {
+            height: 0;
+        }
+        @include respondto(maxxs) {
+            height: 0;
+        }
+        @include respondto(sm) {
+            height: 198px; // 102px;
+        }
+        @include respondto(md) {
+            height: 198px; // 102px;
+        }
+        @include respondto(lg) {
+            height: 218px; // 122px;
+        }
+    }
+}
+
+.container-menu-top{
+    background: $primary-green;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 42px;
+    // @include ease-default;
+    @include respondto(minxs) {}
+    @include respondto(maxxs) {}
+    @include respondto(sm) {}
+    @include respondto(md) {}
+    @include respondto(lg) {}
+    &.scroll-active{
+        @include respondto(minxs) {}
+        @include respondto(maxxs) {}
+        @include respondto(sm) {
+            position: fixed;
+            top: -42px;
+            z-index: 10;
+        }
+        @include respondto(md) {
+            position: fixed;
+            top: -42px;
+            z-index: 10;
+        }
+        @include respondto(lg) {
+            position: fixed;
+            top: -42px;
+            z-index: 10;
+        }
+    }
+    .aux-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        .content-top-left{
+            display: flex;
+            height: 100%;
+            /* .btn-logo{
+                display: flex;
+                height: 100%;
+                @include respondto(minxs) {}
+                @include respondto(maxxs) {}
+                @include respondto(sm) {
+                    display: none;
+                }
+                @include respondto(md) {
+                    display: none;
+                }
+                @include respondto(lg) {
+                    display: none;
+                }
+                a{
+                    display:flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    height: 100%;
+                    padding: 0 10px 0 10px;
+                    img{
+                        width: 20px;
+                        max-height: 100%;
+                    }
+                }
+            } */
+            .container-btn-login{
+                position: relative;
+                &:hover{
+                    .container-menu-login{
+                        @include respondto(minxs) {}
+                        @include respondto(maxxs) {}
+                        @include respondto(sm) {
+                            display: block;
+                            // animation: panDown .5s forwards;
+                        }
+                        @include respondto(md) {
+                            display: block;
+                            // animation: panDown .5s forwards;
+                        }
+                        @include respondto(lg) {
+                            display: block;
+                            // animation: panDown .5s forwards;
+                        }
+                    }
+                }
+                .content-btn-login{
+                    display:flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    height: 100%;
+                    background: $primary-orange;
+                    padding: 0 10px 0 10px;
+                    margin: 0 0 0 0;
+                    width: max-content;
+                    cursor: pointer;
+                    i{
+                        font-size: 24px;
+                        color: $white;
+                    }
+                    .hola-user{
+                        text-transform: uppercase;
+                        font-family: $font-Mont-Regular;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: $white;
+                        padding: 0 0 0 5px;
+                        line-height: 1;
+                        @include respondto(minxs) {
+                            display: none;
+                        }
+                        @include respondto(maxxs) {
+                            display: none;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                }
+                .container-menu-login{
+                    @include respondto(minxs,maxxs) {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        height: 100vh;
+                        width: 300px;
+                        max-width: 96%;
+                        transform: translateX(-100%);
+                        @include ease-default;
+                        // transition: all 350ms ease;
+                        z-index: 1400;
+                        background: $primary-green;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                    }
+                    @include respondto(sm,md,lg) {
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        z-index: 1000;
+
+                        background: $white;
+                        padding: 16px 16px 0 16px;
+                        box-shadow: 0 3px 2px 0 rgba(0,0,0,.35);
+                    }
+                    &.login-active{
+                        @include respondto(minxs) {
+                            z-index: 9999999999;
+                            transform: translateX(0%);
+                            box-shadow: 0 8px 10px -5px rgba(0,0,0,.2), 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12);
+                        }
+                        @include respondto(maxxs) {
+                            z-index: 9999999999;
+                            transform: translateX(0%);
+                            box-shadow: 0 8px 10px -5px rgba(0,0,0,.2), 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12);
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                    .content-menu-login{
+                        display: flex;
+                        flex-direction: column;
+                        .header-menu-login{
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            height: 90px;// 77px;
+                            padding: 12px 12px 12px 12px;
+                            background: $primary-grey;
+                            @include respondto(minxs) {
+                            }
+                            @include respondto(maxxs) {}
+                            @include respondto(sm) {
+                                display: none;
+                            }
+                            @include respondto(md) {
+                                display: none;
+                            }
+                            @include respondto(lg) {
+                                display: none;
+                            }
+                            .icon-person-login{
+                                color: $white;
+                                font-size: 28px;
+                                padding: 0 4px 0 4px;
+                            }
+                            .text-user{
+                                color: $white;
+                                font-family: $font-Mont-Regular;
+                                font-weight: 400;
+                                font-size: 14px;
+                                padding: 0 0 0 10px;
+                            }
+                            .close-menu-login{
+                                position: absolute;
+                                color: $white;
+                                top: 5px;
+                                right: 15px;
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                        .lista-menu-login{
+                            @include respondto(minxs) {
+                                padding: 30px 0 30px 0;
+                            }
+                            @include respondto(maxxs) {
+                                padding: 30px 0 30px 0;
+                            }
+                            @include respondto(sm) {}
+                            @include respondto(md) {}
+                            @include respondto(lg) {}
+                            .item-menu-login{
+                                position: relative;
+                                &:not(:last-child){
+                                    @include respondto(minxs) {}
+                                    @include respondto(maxxs) {}
+                                    @include respondto(sm) {
+                                        border-bottom: 1px solid #ccc;
+                                    }
+                                    @include respondto(md) {
+                                        border-bottom: 1px solid #ccc;
+                                    }
+                                    @include respondto(lg) {
+                                        border-bottom: 1px solid #ccc;
+                                    }
+                                }
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 12px 10px 12px 20px;
+                                    min-height: 45px;
+                                    @include respondto(minxs) {
+                                        min-height: 35px;
+                                        @include ease-default;
+                                    }
+                                    @include respondto(maxxs) {
+                                        min-height: 35px;
+                                        @include ease-default;
+                                    }
+                                    @include respondto(sm) {}
+                                    @include respondto(md) {}
+                                    @include respondto(lg) {}
+                                    &:hover{
+                                        @include respondto(minxs) {
+                                            background: rgba(0,0,0,.2);
+                                            padding: 12px 10px 12px 24px;
+                                            // padding: 2px 33px 2px 20px;
+                                        }
+                                        @include respondto(maxxs) {
+                                            background: rgba(0,0,0,.2);
+                                            padding: 12px 10px 12px 24px;
+                                            // padding: 2px 33px 2px 20px;
+                                        }
+                                        @include respondto(sm) {}
+                                        @include respondto(md) {}
+                                        @include respondto(lg) {}
+                                        &:after{
+                                            content: '';
+                                            position: absolute;
+                                            @include respondto(minxs) {
+                                                top: 0;
+                                                left: 0;
+                                                height: 100%;
+                                                width: 9px;
+                                                background: $primary-orange;
+                                                z-index: 1;
+                                            }
+                                            @include respondto(maxxs) {
+                                                top: 0;
+                                                left: 0;
+                                                height: 100%;
+                                                width: 9px;
+                                                background: $primary-orange;
+                                                z-index: 1;
+                                            }
+                                            @include respondto(sm) {}
+                                            @include respondto(md) {}
+                                            @include respondto(lg) {}
+                                        }
+                                        i{
+                                            @include respondto(minxs) {
+                                                color: rgba($white, .8);
+                                            }
+                                            @include respondto(maxxs) {
+                                                color: rgba($white, .8);
+                                            }
+                                            @include respondto(sm) {
+                                                color: $primary-orange;
+                                            }
+                                            @include respondto(md) {
+                                                color: $primary-orange;
+                                            }
+                                            @include respondto(lg) {
+                                                color: $primary-orange;
+                                            }
+                                        }
+                                        span{
+                                            @include respondto(minxs) {
+                                                color: rgba($white, .8);
+                                            }
+                                            @include respondto(maxxs) {
+                                                color: rgba($white, .8);
+                                            }
+                                            @include respondto(sm) {
+                                                color: $primary-orange;
+                                            }
+                                            @include respondto(md) {
+                                                color: $primary-orange;
+                                            }
+                                            @include respondto(lg) {
+                                                color: $primary-orange;
+                                            }
+                                        }
+                                    }
+                                    i{
+                                        @include respondto(minxs) {
+                                            color: $white;
+                                            font-size: 16px;
+                                        }
+                                        @include respondto(maxxs) {
+                                            color: $white;
+                                            font-size: 16px;
+                                        }
+                                        @include respondto(sm) {
+                                            color: #666;
+                                            font-size: 16px;
+                                        }
+                                        @include respondto(md) {
+                                            color: #666;
+                                            font-size: 16px;
+                                        }
+                                        @include respondto(lg) {
+                                            color: #666;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                    span{
+                                        font-family: $font-Mont-Regular;
+                                        font-weight: 400;
+                                        font-size: 13px;
+                                        color: #666;
+                                        padding: 0 0 0 10px;
+                                        @include respondto(minxs) {
+                                            text-transform: uppercase;
+                                            font-family: $font-Mont-Regular;
+                                            font-weight: 600;
+                                            cursor: pointer;
+                                            color: $white;
+                                        }
+                                        @include respondto(maxxs) {
+                                            text-transform: uppercase;
+                                            font-family: $font-Mont-Regular;
+                                            font-weight: 600;
+                                            cursor: pointer;
+                                            color: $white;
+                                        }
+                                        @include respondto(sm) {
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                        }
+                                        @include respondto(md) {
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                        }
+                                        @include respondto(lg) {
+                                            white-space: nowrap;
+                                            text-overflow: ellipsis;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .btn-resgistro{
+                display: flex;
+                height: 100%;
+                @include respondto(minxs) {
+                    display: none;
+                }
+                @include respondto(maxxs) {
+                    display: none;
+                }
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                a{
+                    display:flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    height: 100%;
+                    background: $primary-orange;
+                    padding: 0 10px 0 10px;
+                    text-transform: uppercase;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: $white;
+                }
+            }
+            .btn-login{
+                display: flex;
+                height: 100%;
+                @include respondto(minxs) {
+                    display: none;
+                }
+                @include respondto(maxxs) {
+                    display: none;
+                }
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                a{
+                    display:flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    height: 100%;
+                    padding: 0 10px 0 10px;
+                    text-transform: uppercase;
+                    font-family: $font-Mont-Regular;
+                    font-weight: 600;
+                    font-size: 12px;
+                    color: $white;
+                }
+            }
+        }
+        .content-top-right{
+            display: flex;
+            height: 100%;
+            .group-datos{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                @include respondto(minxs) {
+                    display: none;
+                }
+                @include respondto(maxxs) {
+                    display: none;
+                }
+                @include respondto(sm) {
+                    // display: none;
+                }
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                .telefono{
+                    padding: 0 25px 0 0;
+                    i{
+                        color: $white;
+                        font-size: 24px;
+                        line-height: 1;
+                    }
+                    span{
+                        font-family: $font-Mont-Light;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: $white;
+                        padding: 0 0 0 5px;
+                        line-height: 1;
+                    }
+                }
+            }
+            .group-servicios{
+                position: relative;
+                display: flex;
+                .carrito{
+                    .icono-carrito{
+                        i{}
+                        .carrito-cantidad{
+                            p{}
+                        }
+                    }
+                    .monto-total{
+                        p{}
+                        i{}
+                    }   
+                }
+                .despacho{
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    background: $primary-orange;
+                    padding: 0 15px 0 15px;
+                    .fa-truck{
+                        color: $white;
+                        font-size: 28px;
+                    }
+                    span{
+                        text-transform: capitalize;
+                        padding: 0 0 0 5px;
+                        font-family: $font-Mont-Light;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: $white;
+                        user-select: none;
+                        @include respondto(minxs) {
+                            display: none;
+                        }
+                        @include respondto(maxxs) {
+                            display: none;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                    .fa-caret-right{
+                        color: $white;
+                        padding: 0 0 0 5px;
+                        @include respondto(minxs) {
+                            display: none;
+                        }
+                        @include respondto(maxxs) {
+                            display: none;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                }
+            }
+            .btn-menu{
+                display:flex;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                height: 100%;
+                padding: 0 10px 0 10px;
+                color: $white;
+                font-size: 26px;
+                margin: 0 5px 0 5px;
+                @include respondto(minxs) {}
+                @include respondto(maxxs) {}
+                @include respondto(sm) {
+                    display: none;
+                }
+                @include respondto(md) {
+                    display: none;
+                }
+                @include respondto(lg) {
+                    display: none;
+                }
+                cursor: pointer;
+                i{}
+            }
+        }
+    }
+}
+
+.container-buscar{
+    position: relative;
+    width: 100%;
+    background: $white;
+    // @include ease-default;
+    // @include respondto(minxs) {
+    //     height: 128px;
+    // }
+    // @include respondto(maxxs) {
+    //     height: 128px;
+    // }
+    // @include respondto(sm) {
+    //     height: 78px;
+    // }
+    // @include respondto(md) {
+    //     height: 78px;
+    // }
+    // @include respondto(lg) {
+    //     height: 78px;
+    // }
+    &.scroll-active{
+        @include respondto(minxs) {}
+        @include respondto(maxxs) {}
+        @include respondto(sm) {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            height: 70px;
+        }
+        @include respondto(md) {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            height: 70px;
+        }
+        @include respondto(lg) {
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            height: 70px;
+        }
+        .container-relative{
+            .aux-buscar{
+                .logo{
+                    @include respondto(minxs) {}
+                    @include respondto(maxxs) {}
+                    @include respondto(sm) {
+                        text-align: left;
+                        width: 310px;
+                    }
+                    @include respondto(md) {
+                        text-align: left;
+                        width: 310px;
+                    }
+                    @include respondto(lg) {
+                        text-align: left;
+                        width: 310px;
+                    }
+                    a{
+                        img{
+                            width: 260px;
+                        }
+                    }
+                }
+                .content-buscador{
+                    @include respondto(minxs) {}
+                    @include respondto(maxxs) {}
+                    @include respondto(sm) {
+                        padding: 10px 15px 10px 15px;
+                    }
+                    @include respondto(md) {
+                        padding: 10px 15px 10px 15px;
+                    }
+                    @include respondto(lg) {
+                        padding: 10px 15px 10px 15px;
+                    }
+                    &.focus-active{
+                        background: #fff;
+                        .buscador{
+                        }
+                    }
+                    .buscador{
+                        @include respondto(minxs) {}
+                        @include respondto(maxxs) {}
+                        @include respondto(sm) {}
+                        @include respondto(md) {
+                            width: 500px;
+                        }
+                        @include respondto(lg) {
+                            width: 500px;
+                        }
+                        input{}
+                        .btn-buscar{
+                            i{}
+                        }
+                    }
+                }
+                .content-carrito{
+                    // display: none;
+                    @include respondto(minxs) {}
+                    @include respondto(maxxs) {}
+                    @include respondto(sm) {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        width: 310px;
+                    }
+                    @include respondto(md) {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        width: 310px;
+                    }
+                    @include respondto(lg) {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        width: 310px;
+                    }
+                    .carrito{
+                        .icono-carrito{
+                            i{}
+                            .carrito-cantidad{
+                                p{}
+                            }
+                        }
+                        .monto-total{
+                            p{}
+                            i{}
+                        }    
+                    }
+                }
+            }
+        }
+    }
+    .container-relative{
+        position: relative;
+        .aux-buscar{
+            display: flex;
+            @include respondto(minxs) {
+                flex-wrap: wrap;
+            }
+            @include respondto(maxxs) {
+                flex-wrap: wrap;
+            }
+            @include respondto(sm) {
+                flex-wrap: nowrap;
+                align-items: stretch;
+            }
+            @include respondto(md) {
+                flex-wrap: nowrap;
+                align-items: stretch;
+            }
+            @include respondto(lg) {
+                flex-wrap: nowrap;
+                align-items: stretch;
+            }
+            .logo{
+                @include respondto(minxs) {
+                    text-align: center;
+                    width: 100%;
+                    padding: 10px 0 0 0;
+                }
+                @include respondto(maxxs) {
+                    text-align: center;
+                    width: 100%;
+                    padding: 10px 0 0 0;
+                }
+                @include respondto(sm) {
+                    text-align: left;
+                    width: 40%;
+                    padding: 10px 0 10px 0;
+                }
+                @include respondto(md) {
+                    text-align: left;
+                    width: 40%;
+                    padding: 10px 0 10px 0;
+                }
+                @include respondto(lg) {
+                    text-align: left;
+                    width: 40%;
+                    padding: 10px 0 10px 0;
+                }
+                a{
+                    img{
+                        width: 310px;
+                        max-width: 100%;
+                        @include respondto(minxs) {
+                            width: 260px;
+                        }
+                        @include respondto(maxxs) {
+                            width: 260px;
+                        }
+                        @include respondto(sm) {
+                            width: 260px;
+                        }
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                }
+            }
+            .content-buscador{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // background: #fff;
+                @include respondto(minxs) {
+                    padding: 15px 10px 10px 10px;
+                    width: 100%;
+                    border-bottom: 1px solid $light-divider-text;
+                }
+                @include respondto(maxxs) {
+                    padding: 15px 10px 10px 10px;
+                    width: 100%;
+                    border-bottom: 1px solid $light-divider-text;
+                }
+                @include respondto(sm) {
+                    padding: 10px 10px 10px 10px;
+                    width: 60%;
+                }
+                @include respondto(md) {
+                    padding: 10px 10px 10px 10px;
+                    width: 60%;
+                }
+                @include respondto(lg) {
+                    padding: 10px 10px 10px 10px;
+                    width: 60%;
+                }
+                &.focus-active{
+                    z-index: 1200;
+                    background: #fff;
+                    .buscador{
+                        @include respondto(minxs) {
+                            border: 0;
+                        }
+                        @include respondto(maxxs) {
+                            border: 0;
+                        }
+                        @include respondto(sm) {}
+                        @include respondto(md) {}
+                        @include respondto(lg) {}
+                    }
+                }
+                .buscador{
+                    display:flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                    position: relative;
+                    width: 100%;
+                    border: 1px solid #cac7ad;
+                    padding: 0 40px 0 12px;
+                    height: 42px;
+                    @include respondto(minxs) {}
+                    @include respondto(maxxs) {}
+                    @include respondto(sm) {
+                        padding: 0 40px 0 12px;
+                    }
+                    @include respondto(md) {
+                        padding: 0 40px 0 12px;
+                    }
+                    @include respondto(lg) {
+                        padding: 0 40px 0 12px;
+                    }
+                    input{
+                        width: 100%;
+                        border: none;
+                        font-family: $font-Mont-Light;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $primary-grey;
+                        box-shadow: none;
+                        text-shadow: none;
+                        background: #fff;
+                        &:focus{
+                            outline:none;
+                        }
+                    }
+                    .btn-buscar{
+                        display:flex;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 40px;
+                        width: 40px;
+                        background: $white;
+                        cursor: pointer;
+                        i{
+                            color: $dark-icon-active;
+                            font-size: 18px;
+                        }
+                    }
+                    .btn-limpiar-buscar{
+                        display:flex;
+                        justify-content: center;
+                        text-align: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: 40px;
+                        width: 40px;
+                        background: $white;
+                        cursor: pointer;
+                        z-index: -1;
+                        &.limpiar-active{
+                            z-index: 1;
+                        }
+                        i{
+                            color: $dark-icon-active;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .content-carrito{
+                text-align: right;
+                @include respondto(minxs) {}
+                @include respondto(maxxs) {}
+                @include respondto(sm) {
+                    display: none;
+                }
+                @include respondto(md) {
+                    display: none;
+                }
+                @include respondto(lg) {
+                    display: none;
+                }
+                .carrito{
+                    width: 142px;
+                    height: 42px;
+                    @include respondto(minxs) {
+                        display: none;
+                    }
+                    @include respondto(maxxs) {
+                        display: none;
+                    }
+                    @include respondto(sm) {}
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                    .icono-carrito{
+                        i{}
+                        .carrito-cantidad{
+                            p{}
+                        }
+                    }
+                    .monto-total{
+                        p{}
+                        i{}
+                    }    
+                }
+            }
+        }
+    }
+}
+
+.btn-subir{
+    background: url('../img/backtotop.png') no-repeat center center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    user-select: none;
+    &.scroll-active{
+        display: block;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+}
+

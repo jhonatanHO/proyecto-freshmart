@@ -1,0 +1,748 @@
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Montserrat Light Italic"), local("Montserrat-LightItalic"), url("../fonts/Montserrat-LightItalic.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Montserrat Italic"), local("Montserrat-Italic"), url("../fonts/Montserrat-Italic.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  src: local("Montserrat Medium Italic"), local("Montserrat-MediumItalic"), url("../fonts/Montserrat-MediumItalic.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 600;
+  src: local("Montserrat SemiBold Italic"), local("Montserrat-SemiBoldItalic"), url("../fonts/Montserrat-SemiBoldItalic.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Montserrat Bold Italic"), local("Montserrat-BoldItalic"), url("../fonts/Montserrat-BoldItalic.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 800;
+  src: local("Montserrat ExtraBold Italic"), local("Montserrat-ExtraBoldItalic"), url("../fonts/Montserrat-ExtraBoldItalic.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 900;
+  src: local("Montserrat Black Italic"), local("Montserrat-BlackItalic"), url("../fonts/Montserrat-BlackItalic.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat Light"), local("Montserrat-Light"), url("../fonts/Montserrat-Light.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat Medium"), local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Montserrat ExtraBold"), local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"); }
+
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Montserrat Black"), local("Montserrat-Black"), url("../fonts/Montserrat-Black.ttf") format("truetype"); }
+
+/****** Dark theme Material Design ******/
+/****** /Dark theme Material Design ******/
+/****** Light theme Material Design ******/
+/****** /Light theme Material Design ******/
+/****** Theme v1 Freshmart  ******/
+/****** /Theme v1 Freshmart  ******/
+/****** Theme v2 Freshmart  ******/
+/****** /Theme v2 Freshmart  ******/
+/**************** RESPONSIVE *********************/
+/**************** /RESPONSIVE *********************/
+/********* FONTS ***********/
+/********* /FONTS ***********/
+body {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+  body.oveflow-hidden {
+    overflow: hidden; }
+
+.fs-general {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility; }
+  .fs-general *,
+  .fs-general *:before,
+  .fs-general *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility; }
+  .fs-general span {
+    margin: 0; }
+  .fs-general img {
+    vertical-align: baseline;
+    max-width: none;
+    height: auto; }
+  .fs-general a {
+    text-decoration: none; }
+    .fs-general a:link {
+      text-decoration: none; }
+    .fs-general a:focus {
+      outline: none; }
+  .fs-general h1, .fs-general h2, .fs-general h3, .fs-general h4, .fs-general h5, .fs-general h6 {
+    margin: 0;
+    padding: 0; }
+  .fs-general p {
+    margin: 0;
+    padding: 0; }
+  .fs-general ul,
+  .fs-general ol {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .fs-general form {
+    margin: 0; }
+
+.input-number-no-bottom {
+  -moz-appearance: textfield;
+  margin: 0; }
+  .input-number-no-bottom::-webkit-inner-spin-button, .input-number-no-bottom::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+
+.input-searchbox-no-style::-webkit-search-decoration, .input-searchbox-no-style::-webkit-search-cancel-button, .input-searchbox-no-style::-webkit-search-results-button, .input-searchbox-no-style::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+.limpia-input {
+  border: 0; }
+  .limpia-input:focus {
+    outline: 0px; }
+
+.full-width {
+  width: 100%; }
+
+.full-body {
+  min-width: 100%;
+  min-height: 100vh; }
+
+.blockv3-container {
+  width: 96%;
+  max-width: 1170px;
+  margin: auto; }
+
+.shadow-footer {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0); }
+
+.fondo-gray {
+  background: #E5E5E5; }
+
+/**************** RESPONSIVE *********************/
+/**************** /RESPONSIVE *********************/
+/**************** RESPOSIVE DE LOS FONT *********************/
+/**************** /RESPOSIVE DE LOS FONT *********************/
+/* Inicio iframe responsive */
+/* Fin iframe responsive */
+/* Inicio ajustar texto a la caja usa tres puntos suspensivos al final y en una sola linea */
+/* Fin ajustar texto a la caja usa tres puntos suspensivos al final y en una sola linea */
+/* Inicio ajustar texto a la caja usa tres puntos suspensivos al final y en varias lineas */
+/* Example: @include ajustatrespuntosmultiline(17px, 1.1, 3); */
+/* Fin ajustar texto a la caja usa tres puntos suspensivos al final y en varias lineas */
+/* Inicio ajustar texto a la caja */
+/* Fin ajustar texto a la caja */
+/* Inicio convierte imagen a escala de grises por css y svg 
+*  Para asegurar mayor compatibilidad agrgar en cualquier parte de la pagina el siguiente code:
+* 	<div style="width:0;height:0;"><svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"><filter id="grayscale"><fecolormatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0"/></filter></svg></div>
+*/
+/* Fin convierte imagen a escala de grises por css y svg  */
+/* Inicio animacion shadow */
+/* Fin animacion shadow */
+.block-container-despacho {
+  position: relative;
+  width: 100%; }
+  .block-container-despacho .fm-body-despacho .fm-container-arrows {
+    padding: 0 0 10px 0; }
+    .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        cursor: pointer;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
+        .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho.slick-disabled {
+          cursor: default; }
+          .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho.slick-disabled .icon-arrow {
+            opacity: .6; }
+          .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho.slick-disabled .prev-web,
+          .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho.slick-disabled .prev-mobile {
+            opacity: .6; }
+        .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .icon-arrow {
+          color: #45a00a;
+          margin: 0 5px 0 0; }
+        .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-web {
+          font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+          font-weight: 600;
+          color: #45a00a; }
+          @media only screen and (max-width: 768px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-web {
+              font-size: 11px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-web {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-web {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 1201px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-web {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (max-width: 576px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-web {
+              display: none; } }
+          @media only screen and (max-width: minxspx) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-web {
+              display: none; } }
+          @media only screen and (min-width: 577px) and (max-width: 768px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-web {
+              display: none; } }
+          @media only screen and (max-width: maxxspx) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-web {
+              display: none; } }
+        .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-mobile {
+          font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+          font-weight: 600;
+          color: #45a00a; }
+          @media only screen and (max-width: 768px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-mobile {
+              font-size: 11px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-mobile {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-mobile {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 1201px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-mobile {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-mobile {
+              display: none; } }
+          @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-mobile {
+              display: none; } }
+          @media only screen and (min-width: 1201px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .prev-despacho .prev-mobile {
+              display: none; } }
+      .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        cursor: pointer;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
+        .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho.slick-disabled {
+          cursor: default; }
+          .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho.slick-disabled .icon-arrow {
+            opacity: .6; }
+          .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho.slick-disabled .next-web,
+          .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho.slick-disabled .next-mobile {
+            opacity: .6; }
+        .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .icon-arrow {
+          color: #45a00a;
+          margin: 0 0 0 5px; }
+        .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-web {
+          font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+          font-weight: 600;
+          color: #45a00a; }
+          @media only screen and (max-width: 768px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-web {
+              font-size: 11px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-web {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-web {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 1201px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-web {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (max-width: 576px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-web {
+              display: none; } }
+          @media only screen and (max-width: minxspx) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-web {
+              display: none; } }
+          @media only screen and (min-width: 577px) and (max-width: 768px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-web {
+              display: none; } }
+          @media only screen and (max-width: maxxspx) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-web {
+              display: none; } }
+        .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-mobile {
+          font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+          font-weight: 600;
+          color: #45a00a; }
+          @media only screen and (max-width: 768px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-mobile {
+              font-size: 11px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-mobile {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-mobile {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 1201px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-mobile {
+              font-size: 14px;
+              line-height: 1.4; } }
+          @media only screen and (min-width: 769px) and (max-width: 992px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-mobile {
+              display: none; } }
+          @media only screen and (min-width: 993px) and (max-width: 1200px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-mobile {
+              display: none; } }
+          @media only screen and (min-width: 1201px) {
+            .block-container-despacho .fm-body-despacho .fm-container-arrows .fm-content-arrows .next-despacho .next-mobile {
+              display: none; } }
+  .block-container-despacho .fm-body-despacho .fm-container-horario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    @media only screen and (max-width: 576px) {
+      .block-container-despacho .fm-body-despacho .fm-container-horario {
+        padding: 5px 5px 5px 5px; } }
+    @media only screen and (max-width: minxspx) {
+      .block-container-despacho .fm-body-despacho .fm-container-horario {
+        padding: 5px 5px 5px 5px; } }
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+      .block-container-despacho .fm-body-despacho .fm-container-horario {
+        padding: 5px 5px 5px 5px; } }
+    @media only screen and (max-width: maxxspx) {
+      .block-container-despacho .fm-body-despacho .fm-container-horario {
+        padding: 5px 5px 5px 5px; } }
+    @media only screen and (min-width: 769px) and (max-width: 992px) {
+      .block-container-despacho .fm-body-despacho .fm-container-horario {
+        padding: 5px 5px 5px 5px; } }
+    @media only screen and (min-width: 993px) and (max-width: 1200px) {
+      .block-container-despacho .fm-body-despacho .fm-container-horario {
+        padding: 5px 5px 5px 5px; } }
+    @media only screen and (min-width: 1201px) {
+      .block-container-despacho .fm-body-despacho .fm-container-horario {
+        padding: 5px 5px 5px 5px; } }
+    .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 12.5%; }
+      @media only screen and (max-width: 576px) {
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario {
+          width: 25%; } }
+      @media only screen and (max-width: minxspx) {
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario {
+          width: 25%; } }
+      @media only screen and (min-width: 577px) and (max-width: 768px) {
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario {
+          width: 16.66%; } }
+      @media only screen and (max-width: maxxspx) {
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario {
+          width: 16.66%; } }
+      .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-icon-carrito {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 8px 0 23px 0; }
+        @media only screen and (max-width: 576px) {
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-icon-carrito {
+            padding: 8px 0 20px 0; } }
+        @media only screen and (max-width: minxspx) {
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-icon-carrito {
+            padding: 8px 0 20px 0; } }
+        @media only screen and (min-width: 577px) and (max-width: 768px) {
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-icon-carrito {
+            padding: 8px 0 20px 0; } }
+        @media only screen and (max-width: maxxspx) {
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-icon-carrito {
+            padding: 8px 0 20px 0; } }
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-icon-carrito img {
+          width: 46px; }
+      .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-content-hora .fm-hora {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        min-height: 76px; }
+        @media only screen and (max-width: 576px) {
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-content-hora .fm-hora {
+            min-height: 73px; } }
+        @media only screen and (max-width: minxspx) {
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-content-hora .fm-hora {
+            min-height: 73px; } }
+        @media only screen and (min-width: 577px) and (max-width: 768px) {
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-content-hora .fm-hora {
+            min-height: 73px; } }
+        @media only screen and (max-width: maxxspx) {
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-content-hora .fm-hora {
+            min-height: 73px; } }
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-content-hora .fm-hora .title {
+          font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 1.4;
+          color: #45a00a;
+          text-align: center; }
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-left-horario .fm-content-hora .fm-hora .hora {
+          font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+          font-weight: 400;
+          font-size: 12px;
+          color: #666;
+          line-height: 1.4;
+          text-align: center; }
+    .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario {
+      width: 87.5%; }
+      @media only screen and (max-width: 576px) {
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario {
+          width: 75%; } }
+      @media only screen and (max-width: minxspx) {
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario {
+          width: 75%; } }
+      @media only screen and (min-width: 577px) and (max-width: 768px) {
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario {
+          width: 83.33%; } }
+      @media only screen and (max-width: maxxspx) {
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario {
+          width: 83.33%; } }
+      .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content {
+        overflow-x: hidden; }
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario:focus {
+          outline: transparent; }
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario:nth-child(2n+1) {
+          background: #e3e6cb;
+          border-radius: 10px; }
+        .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia {
+          padding: 10px 0 0 0; }
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            text-align: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia h3 {
+              text-transform: capitalize;
+              font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+              font-weight: 600;
+              color: #45a00a;
+              padding: 0 0 5px 0; }
+              @media only screen and (max-width: 768px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia h3 {
+                  font-size: 11px;
+                  line-height: 1.1; } }
+              @media only screen and (min-width: 769px) and (max-width: 992px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia h3 {
+                  font-size: 11px;
+                  line-height: 1.1; } }
+              @media only screen and (min-width: 993px) and (max-width: 1200px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia h3 {
+                  font-size: 14px;
+                  line-height: 1.1; } }
+              @media only screen and (min-width: 1201px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia h3 {
+                  font-size: 14px;
+                  line-height: 1.1; } }
+            .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia .fecha-web {
+              font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+              font-weight: 400;
+              font-size: 12px;
+              color: #666;
+              line-height: 1.4;
+              padding: 0 0 15px 0; }
+              @media only screen and (max-width: 576px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia .fecha-web {
+                  display: none; } }
+              @media only screen and (max-width: minxspx) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia .fecha-web {
+                  display: none; } }
+              @media only screen and (min-width: 577px) and (max-width: 768px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia .fecha-web {
+                  display: none; } }
+              @media only screen and (max-width: maxxspx) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia .fecha-web {
+                  display: none; } }
+            .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia .fecha-mobile {
+              font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+              font-weight: 400;
+              font-size: 12px;
+              color: #666;
+              line-height: 1.4;
+              padding: 0 0 15px 0; }
+              @media only screen and (min-width: 769px) and (max-width: 992px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia .fecha-mobile {
+                  display: none; } }
+              @media only screen and (min-width: 993px) and (max-width: 1200px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia .fecha-mobile {
+                  display: none; } }
+              @media only screen and (min-width: 1201px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-dia .fecha-mobile {
+                  display: none; } }
+          .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+            .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              text-align: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              padding: 15px 0 15px 0; }
+              .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info.completado .content-checkbox .normal-checkbox {
+                height: 17px;
+                cursor: default; }
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info.completado .content-checkbox .normal-checkbox .check-fresh {
+                  cursor: default; }
+              .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info.completado .precio {
+                display: none; }
+              .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info.completado .text-complete .completo {
+                display: block; }
+              @media only screen and (max-width: 576px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox {
+                  padding: 0 0 10px 0; } }
+              @media only screen and (max-width: minxspx) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox {
+                  padding: 0 0 10px 0; } }
+              @media only screen and (min-width: 577px) and (max-width: 768px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox {
+                  padding: 0 0 10px 0; } }
+              @media only screen and (max-width: maxxspx) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox {
+                  padding: 0 0 10px 0; } }
+              @media only screen and (min-width: 769px) and (max-width: 992px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox {
+                  padding: 0 0 15px 0; } }
+              @media only screen and (min-width: 993px) and (max-width: 1200px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox {
+                  padding: 0 0 15px 0; } }
+              @media only screen and (min-width: 1201px) {
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox {
+                  padding: 0 0 15px 0; } }
+              .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox .normal-checkbox {
+                height: 17px; }
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox .normal-checkbox .img-checkbox {
+                  width: 42px; }
+                  @media only screen and (max-width: 576px) {
+                    .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox .normal-checkbox .img-checkbox {
+                      display: none; } }
+                  @media only screen and (max-width: minxspx) {
+                    .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox .normal-checkbox .img-checkbox {
+                      display: none; } }
+                  @media only screen and (min-width: 577px) and (max-width: 768px) {
+                    .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox .normal-checkbox .img-checkbox {
+                      display: none; } }
+                  @media only screen and (max-width: maxxspx) {
+                    .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .content-checkbox .normal-checkbox .img-checkbox {
+                      display: none; } }
+              .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .precio {
+                font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                color: #45a00a;
+                line-height: 1.4; }
+              .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .text-complete {
+                width: 100%; }
+                .block-container-despacho .fm-body-despacho .fm-container-horario .fm-right-horario .view-content .slick-list .slick-track .fm-item-horario .fm-content-dia .freshmart-hour .freshmart-info .text-complete .completo {
+                  font-family: "Montserrat-Regular", "Montserrat", "Roboto", serif, sans-serif;
+                  font-weight: 400;
+                  font-size: 12px;
+                  color: #666;
+                  line-height: 1.4;
+                  opacity: .6;
+                  display: block;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  display: none; }
+
+.normal-checkbox {
+  display: block;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  padding-left: 25px; }
+  @media only screen and (max-width: 576px) {
+    .normal-checkbox {
+      padding-left: 17px; } }
+  @media only screen and (max-width: minxspx) {
+    .normal-checkbox {
+      padding-left: 17px; } }
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    .normal-checkbox {
+      padding-left: 17px; } }
+  @media only screen and (max-width: maxxspx) {
+    .normal-checkbox {
+      padding-left: 17px; } }
+  .normal-checkbox .check-fresh {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+    .normal-checkbox .check-fresh:disabled + .check-btn {
+      border: 1px solid #fff;
+      background: #f9ebd6; }
+    .normal-checkbox .check-fresh:checked + .check-btn:after {
+      display: block; }
+  .normal-checkbox .check-fresh ~ .check-btn {
+    background-color: #fff; }
+  .normal-checkbox .check-btn {
+    position: absolute;
+    border: 1px solid #0aa047;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #fff; }
+    .normal-checkbox .check-btn:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 5px;
+      top: 2px;
+      width: 5px;
+      height: 10px;
+      border: solid #45a00a;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }

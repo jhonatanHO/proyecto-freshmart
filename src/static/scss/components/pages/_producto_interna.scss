@@ -1,0 +1,378 @@
+
+
+
+.container-page-detalle{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0 20px 0;
+    .left-page-detalle{
+        @include respondto(minxs) {
+            width: 100%;
+        }
+        @include respondto(maxxs) {
+            width: 100%;
+        }
+        @include respondto(sm) {
+            width: 100%;
+        }
+        @include respondto(md) {
+            width: (100%*9)/12;
+        }
+        @include respondto(lg) {
+            width: (100%*9)/12;
+        }
+        .container-producto-detalle{
+            display: flex;
+            padding: 0 15px 30px 15px;
+            @include respondto(minxs) {
+                padding: 0 0 30px 0;
+            }
+            @include respondto(maxxs) {}
+            @include respondto(sm) {}
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .content-producto-detalle{
+                display: flex;
+                flex-wrap: wrap;
+                background: #fff;
+                border-radius: 3px;
+                padding: 24px 16px 24px 16px;
+                .content-producto-imagen{
+                    margin-bottom: 15px;
+                    @include respondto(minxs) {
+                        width: 100%;
+                    }
+                    @include respondto(maxxs) {
+                        width: 40%;
+                    }
+                    @include respondto(sm) {
+                        width: 40%;
+                    }
+                    @include respondto(md) {
+                        width: 40%;
+                    }
+                    @include respondto(lg) {
+                        width: 40%;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                .content-producto-descripcion{
+                    @include respondto(minxs) {
+                        width: 100%;
+                    }
+                    @include respondto(maxxs) {
+                        padding: 0 0 0 20px;
+                        width: 60%;
+                    }
+                    @include respondto(sm) {
+                        padding: 0 0 0 20px;
+                        width: 60%;
+                    }
+                    @include respondto(md) {
+                        padding: 0 0 0 20px;
+                        width: 60%;
+                    }
+                    @include respondto(lg) {
+                        padding: 0 0 0 20px;
+                        width: 60%;
+                    }
+                    .producto-title{
+                        font-family: $font-Mont-Bold;
+                        font-weight: 700;
+                        font-size: 25px;
+                        color: $primary-grey;
+                        margin-bottom: 25px;
+                        padding-bottom: 19px;
+                        border-bottom: 1px solid #cecbb2;
+                    }
+                    .producto-precios{
+                        display: flex;
+                        align-items: flex-end;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        padding: 0 0 20px 0;
+                        .precio-descuento{
+                            font-family: $font-Mont-Light;
+                            font-weight: 400;
+                            text-decoration: line-through;
+                            font-size: 22px;
+                            color: rgb(178, 178, 178);
+                            padding: 0 10px 0 0;
+                            line-height: 21px;
+                        }
+                        .precio-real{
+                            font-family: $font-Mont-Bold;
+                            font-weight: 700;
+                            font-size: 25px;
+                            color: $primary-grey;
+                            padding: 0 5px 0 0;
+                            line-height: 21px;
+                        }
+                        .equivalente{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 600;
+                            font-size: 10px;
+                            padding: 0 5px 0 0;
+                            text-transform: uppercase;
+                        }
+                        .precio-detalle{
+                            font-family: $font-Mont-Light;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #777;
+                        }
+                    }
+                    .add-cart{
+                        .producto-cantidad{
+                            display: flex;
+                            align-items: flex-end;
+                            padding: 0 0 30px 0;
+                            .content-cant{
+                                width: 100px;
+                            }
+                            .equivalente{
+                                font-family: $font-Mont-Regular;
+                                font-size: 14px;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                                color: $primary-grey;
+                                padding: 0 0 0 7px;
+                            }
+                        }
+                        .btn-add-producto{
+                            max-width: 175px;
+                            padding: 0 0 20px 0;
+                            .btn-form1{
+                                font-family: $font-Mont-Regular;
+                                font-size: 12px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .producto-descripcion{
+                        padding: 15px 0 0 0;
+                        border-top: 1px solid rgba($primary-grey, 0.25);
+                        border-bottom: 1px solid rgba($primary-grey, 0.25);
+                        p{
+                            font-family: $font-Mont-Regular;
+                            font-size: 11px;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            line-height: 14px;
+                            color: #777;
+                            padding: 0 0 15px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-page-detalle{
+        padding: 0 15px 0 15px;
+        @include respondto(minxs) {
+            padding: 0 0 0 0;
+            width: 100%;
+        }
+        @include respondto(maxxs) {
+            width: 100%;
+        }
+        @include respondto(sm) {
+            width: 100%;
+        }
+        @include respondto(md) {
+            width: 25%;
+        }
+        @include respondto(lg) {
+            width: 25%;
+        }
+        .content-pago-seguro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: #fff;// #efefef;
+            border-radius: 3px;
+            padding: 30px 10px 30px 10px;
+            margin: 0 0 30px 0;
+            &:hover{
+                i{
+                    color: rgb(19, 121, 71);
+                }
+                .pago-title{
+                    color: rgb(19, 121, 71);
+                }
+                .pago-descripcion{
+                    color: rgb(19, 121, 71);
+                }
+            }
+            i{
+                font-size: 48px;
+                margin-bottom: 17px;
+                color: #13A538;
+                transition: color .7s ease;
+            }
+            .pago-title{
+                font-family: $font-Mont-Light;
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #13A538;
+                margin-bottom: 14px;
+                transition: color .7s ease;
+            }
+            .pago-descripcion{
+                font-family: $font-Mont-Light;
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(119, 119, 119, 1.0);
+                margin-bottom: 10px;
+                transition: color .7s ease;
+            }
+        }
+    }
+}
+
+
+.aux-page-detalle{
+    padding: 0 0 50px 0;
+    .container-relacionados{
+        padding: 0 15px 0 15px;
+        @include respondto(minxs) {
+            padding: 0 0 0 0;
+        }
+        @include respondto(maxxs) {}
+        @include respondto(sm) {}
+        @include respondto(md) {}
+        @include respondto(lg) {}
+        .relacionado-title{
+            color: $primary-green;
+            font-family: $font-Mont-Bold;
+            font-weight: 800;
+            font-size: 30px;
+            letter-spacing: normal;
+            word-spacing: 0px;
+            text-align: left;
+            text-transform: uppercase;
+            padding: 0 0 35px 0;
+            line-height: 1;
+        }
+        .slider-relacionados{
+            width: 100%;
+            .view-content{
+                position: relative;
+                width: 100%;
+                height: 100%;
+                .slick-arrow{
+                    font-size: 0;
+                    line-height: 0;
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    padding: 0;
+                    cursor: pointer;
+                    color: transparent;
+                    border: 1px solid $primary-grey;
+                    border-radius: 100%;
+                    background: transparent;
+                    z-index: 5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    @include respondto(maxxs) {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    &:hover{
+                        opacity: .5;
+                    }
+                    &:focus{
+                        color: transparent;
+                        outline: none;
+                        background: transparent;
+                    }
+                    &.slick-prev{
+                        top: -35px;
+                        right: 37px;
+                        left: auto;
+                        z-index: 5;
+                        @include respondto(minxs) {
+                            opacity: 0;
+                        }
+                        @include respondto(maxxs) {
+                            top: 50%;
+                            left: 0;
+                            transform: translateY(-46px);
+                        }
+                        @include respondto(sm,md,lg) {
+                            top: -35px;
+                            right: 37px;
+                        }
+                        &:before{
+                            content: '';
+                        }
+                        &:after{
+                            content: "\e903";
+                            font-family: 'icomoon';
+                            transform: rotate(90deg);
+                            display: inline-block;
+                            font-size: 9px;
+                            padding: 3px 0px 0px 0px;
+                            color: $primary-grey;
+                            @include respondto(maxxs) {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    &.slick-next{
+                        top: -35px;
+                        right: 10px;
+                        z-index: 5;
+                        @include respondto(minxs) {
+                            opacity: 0;
+                        }
+                        @include respondto(maxxs) {
+                            top: 50%;
+                            right: 0;
+                            transform: translateY(-46px);
+                        }
+                        @include respondto(sm,md,lg) {
+                            top: -35px;
+                            right: 10px;
+                        }
+                        &:before{
+                            content: '';
+                        }
+                        &:after{
+                            content: "\e903";
+                            font-family: 'icomoon';
+                            transform: rotate(-90deg);
+                            display: inline-block;
+                            font-size: 9px;
+                            padding: 2px 0 0 0;
+                            color: $primary-grey;
+                            @include respondto(maxxs) {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+                .slick-list{
+                    overflow: hidden;
+                    height: 100%;
+                    .slick-track{
+                        height: 100%;
+                        .fm-item-relacionado{
+                            position: relative;
+                            padding: 0 .8vw 10px .8vw;
+                            .card_1{
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

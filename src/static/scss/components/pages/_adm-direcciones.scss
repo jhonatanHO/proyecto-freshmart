@@ -1,0 +1,348 @@
+
+
+$color-green-border: #45a00a;
+$color-green-text: #0aa047;
+
+.container-cuenta-info{
+    .title-page{}
+    .content-direcciones{
+        .no-direccion{
+            font-family: $font-Mont-Regular;
+            font-weight: 400;
+            font-size: 14px;
+            color: #666;
+            width: 100%;
+            margin: 20px 0 30px 0;
+        }
+        .lista-direcciones{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 0 15px 0;
+            .item-direccion{
+                padding: 4px 4px 4px 4px;
+                @include respondto(minxs) {
+                    width: 100%;
+                }
+                @include respondto(maxxs) {
+                    width: 50%;
+                }
+                @include respondto(sm) {
+                    width: 50%;
+                }
+                @include respondto(md) {
+                    width: 33.33%;
+                }
+                @include respondto(lg) {
+                    width: 33.33%;
+                }
+                &.active{
+                    .card-direccion{
+                        border: 1px solid $color-green-border;
+                        .dir-group{
+                            .dir-nombre{
+                                color: $color-green-border;
+                            }
+                            .dir-direcccion{
+                                color: $color-green-border;
+                                span{}
+                            }
+                            .dir-lote{
+                                color: $color-green-border;
+                            }
+                            .dir-referencia{
+                                color: $color-green-border;
+                            }
+                            .dir-zona{
+                                color: $color-green-border;
+                            }
+                            .dir-telefono{
+                                color: $color-green-border;
+                            }
+                            .dir-razon{
+                                color: $color-green-border;
+                            }
+                            .dir-ruc{
+                                color: $color-green-border;
+                            }
+                        }
+                        .dir-pred{
+                            .radio-fresh{
+                                &.rad-green{}
+                                &+label{
+                                    color: $color-green-border;
+                                }
+                            }
+                        }
+                        .dir-btns{
+                            .dir-editar{}
+                            .dir-eliminar{}
+                        }
+                    }
+                }
+                .card-direccion{
+                    border: 1px solid $gray-eighty;
+                    padding: 12px 12px 12px 24px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    .dir-group{
+                        padding: 0 0 10px 0;
+                        .dir-nombre{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 1.4;
+                        }
+                        .dir-direcccion{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 1.4;
+                            span{}
+                        }
+                        .dir-lote{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 1.4;
+                        }
+                        .dir-referencia{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 1.4;
+                        }
+                        .dir-zona{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 1.4;
+                        }
+                        .dir-telefono{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 1.4;
+                        }
+                        .dir-razon{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 1.4;
+                        }
+                        .dir-ruc{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: #666;
+                            line-height: 1.4;
+                        }
+                    }
+                    .dir-pred{
+                        margin-left: -5px;
+                        padding: 0 0 20px 0;
+                        .radio-fresh{
+                            &.rad-green{}
+                            &+label{}
+                        }
+                    }
+                    .dir-btns{
+                        display: flex;
+                        padding: 0 0 20px 0;
+                        .dir-editar{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            cursor: pointer;
+                            text-decoration: underline #333;
+                            color: #333;
+                            padding: 0 10px 0 0;
+                            &:hover{
+                                color: $primary-orange;
+                                text-decoration: underline $primary-orange;
+                            }
+                        }
+                        .dir-eliminar{
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            cursor: pointer;
+                            text-decoration: underline #333;
+                            color: #333;
+                            &:hover{
+                                color: $primary-orange;
+                                text-decoration: underline $primary-orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-add-btn{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            .btn-form2{
+                width: 45%;
+                @include respondto(minxs) {
+                    width: 100%;
+                }
+                @include respondto(maxxs) {}
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+            }
+        }
+    }
+}
+
+
+.container-direc-fac-add,
+.container-direc-add{
+    display: flex;
+    position: fixed;
+    background: $fm-blanco;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0;
+    transition: opacity .2s linear;
+    visibility: hidden;
+    z-index: 0;
+    @include respondto(minxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(maxxs) {
+        width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+    @include respondto(sm) {
+        width: 700px;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    @include respondto(md) {
+        width: 700px;
+        max-height: 100vh;
+    }
+    @include respondto(lg) {
+        width: 700px;
+        max-height: 100vh;
+    }
+    &.active{
+        z-index: 9999999999;
+        opacity: 1;
+        visibility: visible;
+    }
+    .content-direc-add{
+        .modal-header{
+            display: flex;
+            text-align: left;
+            align-items: center;
+            position: relative;
+            height: 52px;
+            background: $fm-gris-600;
+            .modal-close{
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                cursor: pointer;
+                &:active{
+                    transform: translateY(-51%);
+                }
+                i{}
+            }
+            .modal-title{
+                padding: 0 0 0 10px;
+                text-transform: uppercase;
+                color: $fm-text-despacho;
+                font-family: $font-Mont-Regular;
+                font-weight: 400;
+                @include fontsizeheight(16px,1.1,16px,1.1,16px,1.1);
+            }
+        }
+        .modal-body{
+            padding: 20px 20px 40px 16px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: calc(100% - 52px);
+            form{
+                display: flex;
+                flex-wrap: wrap;
+                .item-form{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 4px 0 4px;
+                    @include respondto(minxs) {
+                        width: 100%;
+                    }
+                    @include respondto(maxxs) {
+                        width: 100%;
+                    }
+                    @include respondto(sm) {
+                        width: 50%;
+                    }
+                    @include respondto(md) {
+                        width: 50%;
+                    }
+                    @include respondto(lg) {
+                        width: 50%;
+                    }
+                    &.full-width{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        padding: 0 0 0 0;
+                    }
+                    &.item-full-width{
+                        width: 100%;
+                    }
+                    &.checkbox-modal{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        padding: 0 4px 0 4px;
+                        margin: 0 0 18px 0;
+                        i{
+                            color: #666;
+                            font-size: 20px;
+                            margin: 3px 5px 3px 0;
+                        }
+                        .label-fresh{
+                            margin: 3px 8px 3px 0;
+                        }
+                        .toogle-checkbox{
+                            margin: 3px 0 3px 0;
+                        }
+                    }
+                    .input-fresh {
+                        height: 40px;
+                    }
+                    .label-fresh{}
+                    .sub-block-form{
+                        display: flex;
+                        .content-select{
+                            padding: 0 4px 0 4px;
+                            width: 100%;
+                            .select-fresh{
+                                height: 40px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

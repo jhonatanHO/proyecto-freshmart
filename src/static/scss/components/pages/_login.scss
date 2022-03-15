@@ -1,0 +1,283 @@
+
+
+// BLOCK LOGIN
+.container-milogin{
+    .aux-milogin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @include respondto(minxs) {}
+        @include respondto(maxxs) {}
+        @include respondto(sm) {
+            background: $white;
+        }
+        @include respondto(md) {
+            background: $white;
+        }
+        @include respondto(lg) {
+            background: $white;
+        }
+        .content-milogin{
+            @include respondto(minxs) {
+                width: 100%;
+                padding: 16px 8px 16px 8px;
+                background: $white;
+            }
+            @include respondto(maxxs) {
+                width: 100%;
+                padding: 32px;
+                background: $white;
+            }
+            @include respondto(sm) {
+                width: 75%;
+                padding: 32px;
+            }
+            @include respondto(md) {
+                width: 75%;
+                padding: 32px;
+            }
+            @include respondto(lg) {
+                width: 50%;
+                padding: 32px;
+            }
+            .lista-navbar{
+                display: flex;
+                width: 100%;
+                .item-navbar{
+                    width: 50%;
+                    border-bottom: 4px solid #ccc;
+                    height: 52px;
+                    &.active{
+                        border-bottom: 4px solid $primary-orange;
+                        a{
+                            color: $primary-orange;
+                        }
+                    }
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 100%;
+                        text-transform: uppercase;
+                        font-family: $font-Mont-Regular;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 1;
+                        color: #666;
+                        user-select: none;
+                    }
+                }
+            }
+            .container-login{
+                display: none;
+                padding: 20px 0 36px 0;
+                &.active{
+                    display: flex;
+                }
+                .form-login{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item-form{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 4px 0 4px;
+                        @include respondto(minxs) {
+                            width: 100%;
+                        }
+                        @include respondto(maxxs) {
+                            width: 100%;
+                        }
+                        @include respondto(sm) {
+                            width: 50%;
+                        }
+                        @include respondto(md) {
+                            width: 50%;
+                        }
+                        @include respondto(lg) {
+                            width: 50%;
+                        }
+                        &.full-width{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            padding: 0 0 0 0;
+                        }
+                        .label-fresh{}
+                        .input-fresh{}
+                        .enlace-text{
+                            color: #666;
+                            font-weight: 400;
+                            text-decoration: underline;
+                            padding: 0 0 32px 0;
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 14px;
+                            &:hover{
+                                color: #333;
+                                text-decoration: underline;
+                            }
+                        }
+                        .btn-form1{
+                            height: 40px;
+                            i{}
+                            span{}
+                        }
+                    }
+                }
+            }
+            .container-register{
+                display: none;
+                padding: 20px 0 36px 0;
+                &.active{
+                    display: flex;
+                }
+                .form-register{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item-form{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 0 4px 0 4px;
+                        @include respondto(minxs) {
+                            width: 100%;
+                        }
+                        @include respondto(maxxs) {
+                            width: 100%;
+                        }
+                        @include respondto(sm) {
+                            width: 50%;
+                        }
+                        @include respondto(md) {
+                            width: 50%;
+                        }
+                        @include respondto(lg) {
+                            width: 50%;
+                        }
+                        &.full-width{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            padding: 0 0 0 0;
+                        }
+                        .label-fresh{}
+                        .input-fresh{}
+                        .check-fresh{}
+                        .check-label{
+                            span{}
+                            >a{}
+                        }
+                        .btn-form1{
+                            height: 40px;
+                            margin: 32px 0 0 0;
+                            &.no-active{
+                                cursor: default;
+                                color: $white;
+                                background: #aaa;
+                                border-color: #aaa;
+                                opacity: 0.65;
+                            }
+                            i{}
+                            span{}
+                        }
+                    }
+                }
+            }
+            .container-social{
+                display: flex;
+                padding: 24px 0 16px 0;
+                border-top: solid 1px rgba(0,0,0,.1);
+                margin: 0 -4px 0 -4px;
+                .content-social{
+                    width: 50%;
+                    padding: 0 4px;
+                    .btn-social{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 40px;
+                        user-select: none;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        &:hover{
+                            &.google-social{
+                                background-color: $social-google-hover;
+                                border-color: #962a12;
+                            }
+                            &.facebook-social{
+                                background-color: $social-facebook-hover;
+                                border-color: #004076;
+                            }
+                        }
+                        &.google-social{
+                            background-color: $social-google;
+                            border-color: $social-google;
+                        }
+                        &.facebook-social{
+                            background-color: $social-facebook;
+                            border-color: $social-facebook;
+                        }
+                        i{
+                            color: $white;
+                            font-size: 20px;
+                            margin: 0 10px 0 0;
+                        }
+                        span{
+                            text-transform: uppercase;
+                            font-family: $font-Mont-Regular;
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// BLOCK PUBLICIDAD
+.container-publicidad{
+    .aux-publicidad{
+        .content-publicidad{
+            margin-bottom: 30px;
+            .publicidad-web{
+                width: 100%;
+                @include respondto(minxs) {
+                    display: none;
+                }
+                @include respondto(maxxs) {
+                    display: none;
+                }
+                @include respondto(sm) {}
+                @include respondto(md) {}
+                @include respondto(lg) {}
+                img{
+                    width: 100%;
+                }
+            }
+            .publicidad-mobile{
+                width: 100%;
+                @include respondto(minxs) {}
+                @include respondto(maxxs) {}
+                @include respondto(sm) {
+                    display: none;
+                }
+                @include respondto(md) {
+                    display: none;
+                }
+                @include respondto(lg) {
+                    display: none;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

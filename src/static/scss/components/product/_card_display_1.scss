@@ -1,0 +1,237 @@
+@import 'card_display_general/index';
+
+
+// CARD PRODUCTO 1
+.card_1{
+    display: flex;
+    flex-direction: column;
+    background: $gray-light-bg;
+    border: 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    overflow: hidden;
+    .card_head{
+        background: $white;
+        .thumb_img{
+            position: relative;
+            overflow: hidden;
+            @include respondto(minxs) {
+                height: 140px;
+            }
+            @include respondto(maxxs) {
+                height: 140px;
+            }
+            @include respondto(sm) {
+                height: 185px;
+            }
+            @include respondto(md) {
+                height: 185px;
+            }
+            @include respondto(lg) {
+                height: 185px;
+            }
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                img{
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            .aprovecha{
+                display: none;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                background: $primary-orange;
+                color: $white;
+                font-family: $font-Mont-Bold;
+                font-weight: 800;
+                font-size: 16px;
+                letter-spacing: normal;
+                word-spacing: 0px;
+                z-index: 9;
+                padding: 5px 10px 5px 10px;
+                @include respondto(minxs) {
+                    bottom: 0;
+                }
+                @include respondto(maxxs) {
+                    bottom: 0;
+                }
+                @include respondto(sm) {
+                    top: 0;
+                }
+                @include respondto(md) {
+                    top: 0;
+                }
+                @include respondto(lg) {
+                    top: 0;
+                }
+                &.active{
+                    display: flex;
+                }
+            }
+            .descuento{
+                display: none;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                position: absolute;
+                top: 14px;
+                left: 0;
+                background: $primary-orange;
+                color: $white;
+                font-family: $font-Mont-Bold;
+                font-weight: 800;
+                font-size: 20px;
+                letter-spacing: normal;
+                word-spacing: 0px;
+                z-index: 9;
+                transform: rotate(-42deg);
+                padding: 0 5px 0 5px;
+                width: 160px;
+                left: -50px;
+                @include respondto(minxs) {
+                    height: 26px;
+                }
+                @include respondto(maxxs) {
+                    height: 26px;
+                }
+                @include respondto(sm) {
+                    height: 40px;
+                }
+                @include respondto(md) {
+                    height: 40px;
+                }
+                @include respondto(lg) {
+                    height: 40px;
+                }
+                &.active{
+                    display: flex;
+                }
+            }
+        }
+    }
+    .card_foot{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: $gray-light-bg;
+        .precio_product{
+            color: $primary-green;
+            margin-bottom: 0;
+            font-family: $font-Mont-Bold;
+            font-weight: 800;
+            font-size: 23px;
+            line-height: 15px;
+            letter-spacing: -1px;
+            word-spacing: 0px;
+            @include respondto(minxs) {
+                padding: 35px 10px 15px 10px;
+            }
+            @include respondto(maxxs) {
+                padding: 35px 10px 15px 18px;
+            }
+            @include respondto(sm) {
+                padding: 35px 10px 15px 18px;
+            }
+            @include respondto(md) {
+                padding: 35px 10px 15px 18px;
+            }
+            @include respondto(lg) {
+                padding: 35px 10px 15px 18px;
+            }
+            span{
+                color: $gray-medium;
+                font-family: $font-Mont-Bold;
+                font-weight: 600;
+                font-size: 12px;
+                margin-left: 8px;
+                letter-spacing: 0px;
+            }
+        }
+        .title{
+            color: $gray-dark;
+            font-family: $font-Mont-Bold;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: normal;
+            word-spacing: 0px;
+            transition: color .7s ease, border-color .7s ease, background-color .7s ease;
+            @include respondto(minxs) {
+                padding: 0 10px 0 10px;
+            }
+            @include respondto(maxxs) {
+                padding: 0 10px 0 20px;
+            }
+            @include respondto(sm) {
+                padding: 0 10px 0 20px;
+            }
+            @include respondto(md) {
+                padding: 0 10px 0 20px;
+            }
+            @include respondto(lg) {
+                padding: 0 10px 0 20px;
+            }
+            &:hover{
+                color: $primary-green;
+            }
+        }
+        .descripcion{
+            color: $gray-medium;
+            font-family: $font-Mont-Bold;
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: 0px;
+            word-spacing: 0px;
+            @include respondto(minxs) {
+                padding: 0 10px 25px 10px;
+            }
+            @include respondto(maxxs) {
+                padding: 0 10px 25px 20px;
+            }
+            @include respondto(sm) {
+                padding: 0 10px 25px 20px;
+            }
+            @include respondto(md) {
+                padding: 0 10px 25px 20px;
+            }
+            @include respondto(lg) {
+                padding: 0 10px 25px 20px;
+            }
+        }
+        .content-sumrest_product{
+            @include respondto(minxs) {
+                padding: 0 10px 10px 10px;
+            }
+            @include respondto(maxxs) {
+                padding: 0 10px 10px 20px;
+            }
+            @include respondto(sm) {
+                padding: 0 10px 10px 20px;
+            }
+            @include respondto(md) {
+                padding: 0 10px 10px 20px;
+            }
+            @include respondto(lg) {
+                padding: 0 10px 10px 20px;
+            }
+            .block-cant-product{
+                width: 100px;
+            }
+        }
+        .content-add-carro{
+            .block-add-carro{
+            }
+        }
+    }
+}
+
